@@ -1,192 +1,283 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | أعمالي</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ملفي الشخصي | صانع محتوى رقمي</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b0f19;
-      color: white;
-      line-height: 1.8;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+    line-height: 1.8;
+}
 
-    header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 30px;
-      background:
-        radial-gradient(circle at top, #243b80, transparent 45%),
-        #0b0f19;
-    }
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(11,16,32,0.95);
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #222b45;
+}
 
-    .hero {
-      max-width: 700px;
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg,#101a38,#0b1020);
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #00d9ff;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    color: #b9c2d9;
+    font-size: 18px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 7px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    background: #00d9ff;
+    color: #07101d;
+}
+
+.btn.secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid #00d9ff;
+}
+
+section {
+    padding: 80px 7%;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #121a30;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #263250;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #00d9ff;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #00d9ff;
+}
+
+.card p {
+    color: #b9c2d9;
+}
+
+.about {
+    background: #0f162b;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #c3cade;
+    font-size: 18px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #b9c2d9;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #070b16;
+    color: #8892aa;
+}
+
+@media(max-width:800px) {
+    .services {
+        grid-template-columns: 1fr;
     }
 
     .hero h1 {
-      font-size: 48px;
-      margin-bottom: 15px;
+        font-size: 34px;
     }
 
-    .hero h1 span {
-      color: #6c8cff;
+    nav {
+        flex-direction: column;
+        gap: 10px;
     }
-
-    .hero p {
-      color: #c7ccda;
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #5865f2;
-      color: white;
-      text-decoration: none;
-      padding: 13px 28px;
-      border-radius: 30px;
-      font-weight: bold;
-      margin: 5px;
-    }
-
-    .btn:hover {
-      background: #7280ff;
-    }
-
-    section {
-      padding: 70px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 40px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #151b2b;
-      padding: 25px;
-      border-radius: 18px;
-      border: 1px solid #29324a;
-      text-align: center;
-    }
-
-    .card h3 {
-      color: #7d94ff;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #b9bfd0;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #070a11;
-      color: #888fa3;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 36px;
-      }
-
-      .hero p {
-        font-size: 17px;
-      }
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <div class="hero">
-      <h1>مرحبًا، أنا <span>صانع محتوى</span></h1>
+<nav>
+    <div class="logo">ملفي الرقمي</div>
 
-      <p>
-        أقدّم أعمالًا إبداعية باستخدام التصميم والذكاء الاصطناعي
-        وصناعة المحتوى الرقمي.
-      </p>
-
-      <a href="#works" class="btn">شاهد أعمالي</a>
-      <a href="#contact" class="btn">تواصل معي</a>
+    <div>
+        <a href="#services">خدماتي</a>
+        <a href="#about">من أنا</a>
+        <a href="#contact">تواصل</a>
     </div>
-  </header>
+</nav>
 
-  <section id="works">
-    <h2>أعمالي</h2>
+<section class="hero">
 
-    <div class="cards">
+    <div>
+        <h1>
+            مرحبًا، أنا <span>صانع محتوى رقمي</span>
+        </h1>
 
-      <div class="card">
-        <h3>🎨 التصميم</h3>
         <p>
-          تصميم صور وإعلانات ومحتوى جذاب لمنصات التواصل الاجتماعي.
+            أقدم خدمات التصميم، الذكاء الاصطناعي وصناعة الفيديوهات
+            بطريقة عصرية ومميزة.
         </p>
-      </div>
 
-      <div class="card">
-        <h3>🤖 الذكاء الاصطناعي</h3>
-        <p>
-          إنشاء صور وأفكار ومحتوى إبداعي باستخدام أدوات الذكاء الاصطناعي.
-        </p>
-      </div>
+        <div class="buttons">
+            <a class="btn" href="#services">
+                شاهد خدماتي
+            </a>
 
-      <div class="card">
-        <h3>🎬 صناعة الفيديو</h3>
-        <p>
-          صناعة فيديوهات قصيرة ومحتوى مناسب ليوتيوب وفيسبوك.
-        </p>
-      </div>
+            <a class="btn secondary"
+               href="https://wa.me/22233043366"
+               target="_blank">
+                تواصل معي عبر واتساب
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<section id="services">
+
+    <h2 class="title">خدماتي</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🎨 التصميم</h3>
+            <p>
+                تصميم صور وإعلانات ومنشورات للسوشيال ميديا
+                بشكل احترافي وجذاب.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 الذكاء الاصطناعي</h3>
+            <p>
+                استخدام أدوات الذكاء الاصطناعي لإنشاء
+                محتوى وأفكار وصور بطريقة مبتكرة.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎬 صناعة الفيديو</h3>
+            <p>
+                إنشاء فيديوهات قصيرة وإعلانات ومحتوى
+                مناسب ليوتيوب وفيسبوك وتيك توك.
+            </p>
+        </div>
 
     </div>
-  </section>
 
-  <section id="contact">
-    <div class="contact">
-      <h2>تواصل معي</h2>
+</section>
 
-      <p>
-        هل لديك مشروع أو فكرة؟ يمكنك التواصل معي.
-      </p>
+<section class="about" id="about">
 
-      <br>
+    <h2 class="title">من أنا؟</h2>
 
-      <a href="mailto:example@email.com" class="btn">
-        ✉️ البريد الإلكتروني
-      </a>
-    </div>
-  </section>
+    <p>
+        أنا صانع محتوى رقمي مهتم بالتصميم والذكاء الاصطناعي
+        وصناعة الفيديو. أعمل على تقديم محتوى وخدمات بسيطة،
+        عصرية ومناسبة للأفراد والمشاريع.
+    </p>
 
-  <footer>
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="title">تواصل معي</h2>
+
+    <p>
+        هل لديك مشروع أو تريد تصميمًا أو فيديو؟
+        تواصل معي مباشرة عبر واتساب.
+    </p>
+
+    <a class="btn"
+       href="https://wa.me/22233043366"
+       target="_blank">
+        💬 مراسلتي على واتساب
+    </a>
+
+</section>
+
+<footer>
     © 2026 جميع الحقوق محفوظة
-  </footer>
+</footer>
 
 </body>
 </html>

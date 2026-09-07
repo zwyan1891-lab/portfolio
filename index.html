@@ -7,255 +7,179 @@
 <title>ملفي الرقمي | تصميم وذكاء اصطناعي</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html{
-    scroll-behavior:smooth;
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.8;
 }
 
-body{
-    font-family:Arial,sans-serif;
-    background:#080d1c;
-    color:#fff;
-    line-height:1.8;
+header {
+    background: #111827;
+    color: white;
+    padding: 20px;
 }
 
-nav{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:16px 7%;
-    background:rgba(8,13,28,.96);
-    border-bottom:1px solid #202a45;
+nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.logo{
-    font-size:22px;
-    font-weight:bold;
-    color:#00d9ff;
+.logo {
+    font-size: 22px;
+    font-weight: bold;
 }
 
-nav a{
-    color:#fff;
-    text-decoration:none;
-    margin-right:18px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
 }
 
-.hero{
-    min-height:88vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:50px 20px;
-    background:
-    radial-gradient(circle at top,#172b55,#080d1c 65%);
+.hero {
+    background: linear-gradient(135deg, #111827, #2563eb);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
 }
 
-.hero-content{
-    max-width:800px;
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
-.badge{
-    display:inline-block;
-    padding:7px 16px;
-    border:1px solid #00d9ff;
-    border-radius:30px;
-    color:#00d9ff;
-    margin-bottom:20px;
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
 }
 
-.hero h1{
-    font-size:48px;
-    margin-bottom:20px;
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 15px;
 }
 
-.hero h1 span{
-    color:#00d9ff;
+.hero .btn {
+    background: white;
+    color: #2563eb;
 }
 
-.hero p{
-    color:#b9c2d9;
-    font-size:19px;
-    max-width:650px;
-    margin:auto;
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
 }
 
-.buttons{
-    margin-top:30px;
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
-.btn{
-    display:inline-block;
-    padding:13px 25px;
-    margin:6px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    background:#00d9ff;
-    color:#06101b;
+.services,
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-.btn.secondary{
-    background:transparent;
-    color:#fff;
-    border:1px solid #00d9ff;
+.card,
+.portfolio-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
-section{
-    padding:80px 7%;
+.card h3,
+.portfolio-card h3 {
+    margin: 12px 0;
 }
 
-.title{
-    text-align:center;
-    font-size:34px;
-    margin-bottom:45px;
+.icon {
+    font-size: 45px;
 }
 
-.services{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    max-width:1100px;
-    margin:auto;
+.portfolio-image {
+    font-size: 45px;
+    text-align: center;
 }
 
-.card{
-    background:#11192d;
-    padding:30px;
-    border-radius:20px;
-    border:1px solid #263250;
-    transition:.3s;
+.portfolio-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 15px 0;
 }
 
-.card:hover{
-    transform:translateY(-8px);
-    border-color:#00d9ff;
+.portfolio-content span {
+    color: #2563eb;
+    font-weight: bold;
 }
 
-.card-icon{
-    font-size:45px;
-    margin-bottom:15px;
+.about {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
 }
 
-.card h3{
-    color:#00d9ff;
-    margin-bottom:12px;
+.price {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2563eb;
+    margin: 20px 0;
 }
 
-.card p{
-    color:#b9c2d9;
+.contact {
+    text-align: center;
+    background: #111827;
+    color: white;
+    border-radius: 15px;
+    padding: 40px 20px;
 }
 
-.portfolio{
-    background:#0d1427;
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
 }
 
-.portfolio-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-    max-width:1100px;
-    margin:auto;
-}
-
-.portfolio-card{
-    background:#11192d;
-    border:1px solid #263250;
-    border-radius:20px;
-    overflow:hidden;
-    transition:.3s;
-}
-
-.portfolio-card:hover{
-    transform:translateY(-8px);
-    border-color:#00d9ff;
-}
-
-.portfolio-image{
-    height:220px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:70px;
-    background:linear-gradient(135deg,#172b55,#0b1020);
-}
-
-.portfolio-content{
-    padding:25px;
-}
-
-.portfolio-content span{
-    color:#00d9ff;
-    font-size:14px;
-    font-weight:bold;
-}
-
-.portfolio-content h3{
-    margin:8px 0;
-}
-
-.portfolio-content p{
-    color:#b9c2d9;
-    margin-bottom:15px;
-}
-
-.about p{
-    max-width:800px;
-    margin:auto;
-    text-align:center;
-    color:#c3cade;
-    font-size:18px;
-}
-
-.contact{
-    text-align:center;
-    background:#0d1427;
-}
-
-.contact p{
-    color:#b9c2d9;
-    margin-bottom:25px;
-}
-
-footer{
-    text-align:center;
-    padding:25px;
-    background:#050914;
-    color:#8892aa;
-}
-
-@media(max-width:800px){
-
-    nav{
-        flex-direction:column;
-        gap:10px;
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
     }
 
-    .hero h1{
-        font-size:34px;
+    .hero p {
+        font-size: 17px;
     }
 
-    .services,
-    .portfolio-grid{
-        grid-template-columns:1fr;
-    }
-
-    section{
-        padding:60px 6%;
+    nav {
+        justify-content: center;
     }
 }
 </style>
 </head>
 
 <body>
+
+<header>
 
 <nav>
 
@@ -272,46 +196,29 @@ footer{
 
 </nav>
 
+</header>
+
 
 <section class="hero">
 
-<div class="hero-content">
-
-<div class="badge">
-صانع محتوى رقمي
-</div>
-
 <h1>
-أصنع لك <span>محتوى مميزًا</span>
+صانع محتوى رقمي
 </h1>
 
 <p>
-أقدم خدمات التصميم والذكاء الاصطناعي وصناعة الفيديو
-بأسلوب عصري يساعد مشروعك على الظهور بشكل احترافي.
+أصنع لك محتوى مميزًا باستخدام التصميم والذكاء الاصطناعي
 </p>
 
-<div class="buttons">
-
-<a class="btn" href="#portfolio">
-شاهد أعمالي
+<a class="btn" href="#contact">
+اطلب خدمتك الآن
 </a>
-
-<a class="btn secondary"
-href="https://wa.me/22233043366"
-target="_blank">
-تواصل معي عبر واتساب
-</a>
-
-</div>
-
-</div>
 
 </section>
 
 
 <section id="services">
 
-<h2 class="title">
+<h2 class="section-title">
 خدماتي
 </h2>
 
@@ -319,15 +226,14 @@ target="_blank">
 
 <div class="card">
 
-<div class="card-icon">🎨</div>
+<div class="icon">🎨</div>
 
 <h3>
 التصميم
 </h3>
 
 <p>
-تصميم الإعلانات والمنشورات والصور
-بشكل احترافي وجذاب.
+تصميم صور وإعلانات ومحتوى جذاب لمنصات التواصل الاجتماعي.
 </p>
 
 </div>
@@ -335,15 +241,14 @@ target="_blank">
 
 <div class="card">
 
-<div class="card-icon">🤖</div>
+<div class="icon">🤖</div>
 
 <h3>
 الذكاء الاصطناعي
 </h3>
 
 <p>
-إنشاء صور وأفكار ومحتوى إبداعي
-باستخدام أدوات الذكاء الاصطناعي.
+إنشاء صور وأفكار ومحتوى إبداعي باستخدام الذكاء الاصطناعي.
 </p>
 
 </div>
@@ -351,15 +256,14 @@ target="_blank">
 
 <div class="card">
 
-<div class="card-icon">🎬</div>
+<div class="icon">🎬</div>
 
 <h3>
-صناعة الفيديو
+تصميم الفيديو
 </h3>
 
 <p>
-إنشاء فيديوهات قصيرة وأغلفة جذابة
-لـ YouTube وFacebook وTikTok.
+تصميم أغلفة فيديو وصور مصغرة جذابة لليوتيوب وفيسبوك.
 </p>
 
 </div>
@@ -369,13 +273,13 @@ target="_blank">
 </section>
 
 
-<section class="portfolio" id="portfolio">
+<section id="portfolio">
 
-<h2 class="title">
-نماذج من أعمالي
+<h2 class="section-title">
+أعمالي
 </h2>
 
-<div class="portfolio-grid">
+<div class="portfolio">
 
 
 <div class="portfolio-card">
@@ -391,10 +295,12 @@ target="_blank">
 <h3>
 إعلان تجاري احترافي
 </h3>
-<img src="file_000000003cfc81f4a09b6ac2e0b29423.png" alt="إعلان تجاري احترافي" style="width:100%; border-radius:12px;">
+
+<img src="file_000000003cfc81f4a09b6ac2e0b29423.png"
+alt="إعلان تجاري احترافي">
+
 <p>
-نموذج تصميم إعلان عصري مناسب
-للمشاريع والسوشيال ميديا.
+نموذج تصميم إعلان عصري مناسب للمشاريع والسوشيال ميديا.
 </p>
 
 <a class="btn" href="#contact">
@@ -404,7 +310,6 @@ target="_blank">
 </div>
 
 </div>
-
 
 
 <div class="portfolio-card">
@@ -421,12 +326,11 @@ target="_blank">
 صورة إبداعية بالذكاء الاصطناعي
 </h3>
 
-<<img src="file_000000000c0881f4b19eb033b9488706.png"
-alt="غلاف فيديو احترافي"
-style="width:100%; border-radius:12px;">
+<img src="a_highly_detailed_cinematic_photoreal_fantasy.png"
+alt="صورة إبداعية بالذكاء الاصطناعي">
+
 <p>
-نموذج لصورة إبداعية مصممة
-باستخدام الذكاء الاصطناعي.
+نموذج لصورة إبداعية مصممة باستخدام الذكاء الاصطناعي.
 </p>
 
 <a class="btn" href="#contact">
@@ -436,7 +340,6 @@ style="width:100%; border-radius:12px;">
 </div>
 
 </div>
-
 
 
 <div class="portfolio-card">
@@ -452,21 +355,12 @@ style="width:100%; border-radius:12px;">
 <h3>
 غلاف فيديو احترافي
 </h3>
-<<
-<h3>
-غلاف فيديو احترافي
-</h3>
 
-<img src="file_000000003cfc81f4a09b6ac2e0b29423.png"
-alt="غلاف فيديو احترافي"
-style="width:100%; border-radius:12px;">
-
+<img src="file_0000000061108210a3b090f9f0af3d33.png"
+alt="غلاف فيديو احترافي">
 
 <p>
-
-<p>
-نموذج لغلاف جذاب لفيديوهات
-YouTube وFacebook.
+نموذج لغلاف جذاب لفيديوهات YouTube وFacebook.
 </p>
 
 <a class="btn" href="#contact">
@@ -477,7 +371,6 @@ YouTube وFacebook.
 
 </div>
 
-
 </div>
 
 </section>
@@ -485,93 +378,84 @@ YouTube وFacebook.
 
 <section id="about">
 
-<h2 class="title">
-من أنا؟
+<h2 class="section-title">
+من أنا
 </h2>
 
+<div class="about">
+
 <p>
-أنا صانع محتوى رقمي مهتم بالتصميم والذكاء الاصطناعي
-وصناعة الفيديو. أساعد أصحاب المشاريع والأفراد
-على إنشاء محتوى عصري وجذاب.
+مرحبًا، أنا صانع محتوى رقمي.
 </p>
 
-</section>
+<p>
+أقدّم أعمالًا إبداعية باستخدام التصميم والذكاء الاصطناعي وصناعة المحتوى الرقمي.
+</p>
 
-<section id="pricing">
-
-<h2 class="title">الأسعار</h2>
-
-<div class="services">
-
-    <div class="card">
-        <div class="card-icon">🎨</div>
-        <h3>تصميم إعلان</h3>
-        <p>السعر يحدد حسب نوع المنتج وحجم التصميم والتفاصيل المطلوبة.</p>
-
-        <h3>السعر: حسب الطلب</h3>
-
-        <a class="btn"
-           href="https://wa.me/22233043366?text=السلام عليكم، أريد طلب تصميم إعلان"
-           target="_blank">
-           اطلب الآن
-        </a>
-    </div>
-
-
-    <div class="card">
-        <div class="card-icon">🤖</div>
-        <h3>تصميم بالذكاء الاصطناعي</h3>
-        <p>السعر حسب نوع الصورة والفكرة وعدد الصور المطلوبة.</p>
-
-        <h3>السعر: حسب الطلب</h3>
-
-        <a class="btn"
-           href="https://wa.me/22233043366?text=السلام عليكم، أريد طلب صورة بالذكاء الاصطناعي"
-           target="_blank">
-           اطلب الآن
-        </a>
-    </div>
-
-
-    <div class="card">
-        <div class="card-icon">🎬</div>
-        <h3>غلاف فيديو</h3>
-        <p>السعر حسب نوع الفيديو والتصميم والتعديلات المطلوبة.</p>
-
-        <h3>السعر: حسب الطلب</h3>
-
-        <a class="btn"
-           href="https://wa.me/22233043366?text=السلام عليكم، أريد طلب غلاف فيديو"
-           target="_blank">
-           اطلب الآن
-        </a>
-    </div>
+<p>
+هدفي هو مساعدة أصحاب المشاريع وصناع المحتوى على الحصول على تصاميم ومحتوى جذاب واحترافي.
+</p>
 
 </div>
 
 </section>
-<section class="contact" id="contact">
 
-<h2 class="title">
-هل لديك مشروع؟
+
+<section>
+
+<h2 class="section-title">
+أسعار بسيطة
+</h2>
+
+<div class="card">
+
+<p>
+تصميم إعلان أو صورة إبداعية
+</p>
+
+<div class="price">
+ابتداءً من 2$
+</div>
+
+<p>
+السعر قابل للتغيير حسب نوع وحجم العمل.
+</p>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<div class="contact">
+
+<h2>
+تواصل معي
 </h2>
 
 <p>
-تواصل معي الآن عبر واتساب وسنتحدث عن طلبك.
+هل تريد تصميمًا أو غلاف فيديو؟
 </p>
 
-<a class="btn"
-href="https://wa.me/22233043366"
-target="_blank">
-💬 تواصل معي الآن
+<p>
+تواصل معي وسأساعدك في تنفيذ طلبك.
+</p>
+
+<a class="btn" href="https://wa.me/22233043366">
+تواصل عبر WhatsApp
 </a>
+
+</div>
 
 </section>
 
 
 <footer>
 
-© 2026 جميع الحقوق محفوظة
+<p>
+© 2026 ملفي الرقمي - جميع الحقوق محفوظة
+</p>
 
 </footer>
 

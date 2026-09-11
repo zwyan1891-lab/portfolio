@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DIAOUHA | Agence Immobilière en Mauritanie</title>
+<title>DIAOUHA | وكالة عقارية في موريتانيا</title>
 
 <style>
 *{
@@ -13,159 +13,102 @@
   padding:0;
 }
 
-html{
-  scroll-behavior:smooth;
-}
-
 body{
   font-family:Arial,Tahoma,sans-serif;
-  background:#f5f7f8;
+  background:#f4f6f8;
   color:#172033;
-  line-height:1.6;
+  line-height:1.7;
 }
 
 header{
-  position:sticky;
-  top:0;
-  z-index:1000;
   background:#101827;
   color:white;
-  padding:18px 6%;
+  padding:18px 7%;
   display:flex;
   justify-content:space-between;
   align-items:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
 
 .logo{
-  font-size:21px;
+  font-size:25px;
   font-weight:bold;
-  letter-spacing:.5px;
-}
-
-.logo span{
-  color:#d6ad60;
+  letter-spacing:1px;
 }
 
 nav a{
   color:white;
   text-decoration:none;
-  margin-left:25px;
+  margin-right:20px;
   font-size:15px;
 }
 
-nav a:hover{
-  color:#d6ad60;
-}
-
 .hero{
-  min-height:650px;
+  min-height:430px;
   display:flex;
   align-items:center;
-  padding:80px 7%;
-  color:white;
+  justify-content:center;
+  text-align:center;
+  padding:60px 20px;
   background:
-  linear-gradient(rgba(10,18,30,.68),rgba(10,18,30,.72)),
-  url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")
+  linear-gradient(rgba(10,20,35,.75),rgba(10,20,35,.75)),
+  url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80")
   center/cover;
+  color:white;
 }
 
 .hero-content{
-  max-width:720px;
-}
-
-.badge{
-  display:inline-block;
-  background:#d6ad60;
-  color:#101827;
-  padding:8px 15px;
-  border-radius:30px;
-  font-weight:bold;
-  margin-bottom:20px;
+  max-width:750px;
 }
 
 .hero h1{
-  font-size:54px;
-  line-height:1.1;
-  margin-bottom:22px;
+  font-size:42px;
+  margin-bottom:15px;
 }
 
 .hero p{
-  font-size:20px;
-  color:#e5e7eb;
-  margin-bottom:30px;
+  font-size:19px;
+  margin-bottom:25px;
 }
 
 .btn{
   display:inline-block;
-  padding:14px 24px;
+  background:#d6a84f;
+  color:#111827;
+  padding:13px 25px;
   border-radius:8px;
   text-decoration:none;
   font-weight:bold;
   margin:5px;
 }
 
-.btn-primary{
-  background:#d6ad60;
-  color:#101827;
-}
-
-.btn-light{
-  border:1px solid white;
-  color:white;
+.btn.dark{
+  background:white;
 }
 
 section{
-  padding:80px 7%;
+  padding:55px 7%;
 }
 
 .section-title{
   text-align:center;
-  margin-bottom:45px;
+  margin-bottom:35px;
 }
 
 .section-title h2{
-  font-size:35px;
-  margin-bottom:10px;
+  font-size:30px;
+  margin-bottom:8px;
 }
 
 .section-title p{
   color:#687386;
 }
 
-.categories{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:15px;
-}
-
-.category{
-  background:white;
-  padding:25px 15px;
-  text-align:center;
-  border-radius:14px;
-  box-shadow:0 5px 20px rgba(0,0,0,.06);
-  text-decoration:none;
-  color:#172033;
-  transition:.3s;
-}
-
-.category:hover{
-  transform:translateY(-5px);
-  border-bottom:3px solid #d6ad60;
-}
-
-.category-icon{
-  font-size:30px;
-  margin-bottom:10px;
-}
-
 .properties{
-  background:#fff;
-}
-
-.property-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:25px;
 }
 
@@ -173,246 +116,157 @@ section{
   background:white;
   border-radius:15px;
   overflow:hidden;
-  box-shadow:0 7px 25px rgba(0,0,0,.08);
-  transition:.3s;
+  box-shadow:0 6px 22px rgba(0,0,0,.08);
+  transition:.25s;
 }
 
 .card:hover{
-  transform:translateY(-6px);
+  transform:translateY(-5px);
 }
 
-.card-image{
-  height:230px;
-  position:relative;
-  overflow:hidden;
-}
-
-.card-image img{
+.card img{
   width:100%;
-  height:100%;
+  height:220px;
   object-fit:cover;
 }
 
-.tag{
-  position:absolute;
-  top:15px;
-  right:15px;
-  background:#d6ad60;
-  color:#101827;
-  padding:6px 12px;
-  border-radius:20px;
-  font-size:13px;
-  font-weight:bold;
-}
-
 .card-body{
-  padding:22px;
+  padding:20px;
 }
 
-.card-body h3{
+.badge{
+  display:inline-block;
+  background:#eef4ff;
+  color:#2457a6;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
   margin-bottom:8px;
-  font-size:20px;
+}
+
+.card h3{
+  font-size:21px;
+  margin-bottom:8px;
 }
 
 .location{
-  color:#697386;
-  margin-bottom:15px;
-}
-
-.features{
-  display:flex;
-  gap:15px;
   color:#687386;
   font-size:14px;
-  margin-bottom:18px;
-  flex-wrap:wrap;
+  margin-bottom:10px;
 }
 
-.card-btn{
-  display:block;
-  text-align:center;
-  padding:11px;
+.price{
+  color:#b47b17;
+  font-size:21px;
+  font-weight:bold;
+  margin:12px 0;
+}
+
+.details{
+  display:flex;
+  justify-content:space-between;
+  background:#f7f8fa;
+  padding:10px;
   border-radius:8px;
-  background:#101827;
-  color:white;
-  text-decoration:none;
-}
-
-.services{
-  background:#101827;
-  color:white;
-}
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
-}
-
-.service{
-  padding:35px 25px;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:15px;
-  background:rgba(255,255,255,.04);
-}
-
-.service-icon{
-  font-size:38px;
+  font-size:14px;
   margin-bottom:15px;
 }
 
-.service h3{
-  margin-bottom:10px;
-  color:#d6ad60;
+.card-buttons{
+  display:flex;
+  gap:8px;
 }
 
-.service p{
-  color:#cbd5e1;
+.card-buttons a{
+  flex:1;
+  text-align:center;
+  padding:10px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.whatsapp{
+  background:#25D366;
+  color:white;
+}
+
+.call{
+  background:#101827;
+  color:white;
 }
 
 .about{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  align-items:center;
-}
-
-.about-image img{
-  width:100%;
-  border-radius:18px;
-  box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-
-.about-text h2{
-  font-size:38px;
-  margin-bottom:20px;
-}
-
-.about-text p{
-  color:#657083;
-  margin-bottom:15px;
-}
-
-.check{
-  margin:12px 0;
-  font-weight:bold;
-}
-
-.contact{
-  background:#f0f2f4;
-}
-
-.contact-box{
-  max-width:900px;
-  margin:auto;
-  background:white;
-  padding:45px;
-  border-radius:20px;
-  text-align:center;
-  box-shadow:0 8px 30px rgba(0,0,0,.08);
-}
-
-.contact-box h2{
-  font-size:35px;
-  margin-bottom:12px;
-}
-
-.contact-box p{
-  color:#687386;
-  margin-bottom:25px;
-}
-
-.contact-info{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
-  margin:25px 0;
-}
-
-.info{
-  padding:20px;
-  background:#f6f7f8;
-  border-radius:12px;
-}
-
-.info strong{
-  display:block;
-  margin-bottom:5px;
-}
-
-footer{
-  background:#0b111d;
-  color:#b8c0cc;
-  text-align:center;
-  padding:30px 15px;
-}
-
-footer strong{
+  background:#101827;
   color:white;
 }
 
-@media(max-width:900px){
-  nav{
-    display:none;
-  }
-
-  .hero h1{
-    font-size:42px;
-  }
-
-  .categories{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .property-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .service-grid{
-    grid-template-columns:1fr;
-  }
-
-  .about{
-    grid-template-columns:1fr;
-  }
+.about-content{
+  max-width:850px;
+  margin:auto;
+  text-align:center;
 }
 
-@media(max-width:600px){
-  section{
-    padding:60px 5%;
+.about p{
+  color:#d7dce5;
+  margin-top:15px;
+}
+
+.contact-box{
+  background:white;
+  max-width:750px;
+  margin:auto;
+  padding:35px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:0 6px 22px rgba(0,0,0,.07);
+}
+
+.contact-box h2{
+  margin-bottom:10px;
+}
+
+footer{
+  background:#0b111c;
+  color:#aeb6c3;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
+
+.notice{
+  background:#fff7df;
+  color:#795b16;
+  border-right:4px solid #d6a84f;
+  padding:15px;
+  border-radius:8px;
+  margin:0 auto 30px;
+  max-width:1000px;
+}
+
+@media(max-width:700px){
+
+  header{
+    flex-direction:column;
+    gap:10px;
   }
 
-  .hero{
-    min-height:600px;
-    padding:60px 5%;
+  nav a{
+    margin:0 6px;
+    font-size:13px;
   }
 
   .hero h1{
-    font-size:36px;
+    font-size:31px;
   }
 
   .hero p{
-    font-size:17px;
+    font-size:16px;
   }
 
-  .property-grid{
-    grid-template-columns:1fr;
-  }
-
-  .categories{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .contact-info{
-    grid-template-columns:1fr;
-  }
-
-  .contact-box{
-    padding:30px 20px;
-  }
-
-  .logo{
-    font-size:17px;
+  section{
+    padding:40px 5%;
   }
 }
 </style>
@@ -421,83 +275,35 @@ footer strong{
 <body>
 
 <header>
-  <div class="logo">
-    DIAOUHA <span>AGENCE IMMOBILIÈRE</span>
-  </div>
+
+  <div class="logo">DIAOUHA</div>
 
   <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#proprietes">Propriétés</a>
-    <a href="#services">Services</a>
-    <a href="#apropos">À propos</a>
-    <a href="#contact">Contact</a>
+    <a href="#properties">العقارات</a>
+    <a href="#about">من نحن</a>
+    <a href="#contact">تواصل معنا</a>
   </nav>
+
 </header>
 
 
-<section class="hero" id="accueil">
+<section class="hero">
 
   <div class="hero-content">
 
-    <span class="badge">
-      Agence immobilière en Mauritanie
-    </span>
-
-    <h1>
-      Trouvez le bien qui vous correspond.
-    </h1>
+    <h1>وكالة DIAOUHA العقارية</h1>
 
     <p>
-      Découvrez des opportunités immobilières à Nouakchott
-      et bénéficiez d’un accompagnement professionnel pour
-      vos projets d’achat, de vente et de location.
+      نساعدك في العثور على العقار المناسب
+      للبيع والاستثمار في موريتانيا
     </p>
 
-    <a href="#proprietes" class="btn btn-primary">
-      Voir les propriétés
+    <a href="#properties" class="btn">
+      تصفح العقارات
     </a>
 
-    <a href="#contact" class="btn btn-light">
-      Prendre rendez-vous
-    </a>
-
-  </div>
-
-</section>
-
-
-<section>
-
-  <div class="section-title">
-    <h2>Nos catégories</h2>
-    <p>Découvrez les principales opportunités immobilières</p>
-  </div>
-
-  <div class="categories">
-
-    <a class="category" href="#proprietes">
-      <div class="category-icon">🏡</div>
-      <strong>Villas</strong>
-    </a>
-
-    <a class="category" href="#proprietes">
-      <div class="category-icon">🏢</div>
-      <strong>Appartements</strong>
-    </a>
-
-    <a class="category" href="#proprietes">
-      <div class="category-icon">🏠</div>
-      <strong>Maisons</strong>
-    </a>
-
-    <a class="category" href="#proprietes">
-      <div class="category-icon">🌍</div>
-      <strong>Terrains</strong>
-    </a>
-
-    <a class="category" href="#services">
-      <div class="category-icon">💼</div>
-      <strong>Investissement</strong>
+    <a href="#contact" class="btn dark">
+      تواصل معنا
     </a>
 
   </div>
@@ -505,328 +311,342 @@ footer strong{
 </section>
 
 
-<section class="properties" id="proprietes">
+<section id="properties">
 
   <div class="section-title">
-    <h2>Propriétés sélectionnées</h2>
-    <p>Quelques exemples de biens présentés sur la plateforme</p>
-  </div>
 
-  <div class="property-grid">
+    <h2>عقارات مختارة</h2>
 
-
-    <div class="card">
-
-      <div class="card-image">
-        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80">
-        <span class="tag">À vendre</span>
-      </div>
-
-      <div class="card-body">
-
-        <h3>Villa moderne</h3>
-
-        <div class="location">
-          📍 Nouakchott
-        </div>
-
-        <div class="features">
-          <span>🛏 4 chambres</span>
-          <span>🚿 3 salles de bain</span>
-        </div>
-
-        <a href="#contact" class="card-btn">
-          Demander les détails
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="card-image">
-        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80">
-        <span class="tag">À louer</span>
-      </div>
-
-      <div class="card-body">
-
-        <h3>Appartement moderne</h3>
-
-        <div class="location">
-          📍 Tevragh Zeina
-        </div>
-
-        <div class="features">
-          <span>🛏 3 chambres</span>
-          <span>🚿 2 salles de bain</span>
-        </div>
-
-        <a href="#contact" class="card-btn">
-          Demander les détails
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="card-image">
-        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=80">
-        <span class="tag">À vendre</span>
-      </div>
-
-      <div class="card-body">
-
-        <h3>Résidence familiale</h3>
-
-        <div class="location">
-          📍 Nouakchott
-        </div>
-
-        <div class="features">
-          <span>🛏 5 chambres</span>
-          <span>🚗 Garage</span>
-        </div>
-
-        <a href="#contact" class="card-btn">
-          Demander les détails
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="card-image">
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=80">
-        <span class="tag">Terrain</span>
-      </div>
-
-      <div class="card-body">
-
-        <h3>Terrain à bâtir</h3>
-
-        <div class="location">
-          📍 Nouakchott
-        </div>
-
-        <div class="features">
-          <span>📐 Surface sur demande</span>
-        </div>
-
-        <a href="#contact" class="card-btn">
-          Demander les détails
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="card-image">
-        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80">
-        <span class="tag">À vendre</span>
-      </div>
-
-      <div class="card-body">
-
-        <h3>Villa haut standing</h3>
-
-        <div class="location">
-          📍 Tevragh Zeina
-        </div>
-
-        <div class="features">
-          <span>🛏 4 chambres</span>
-          <span>🏊 Piscine</span>
-        </div>
-
-        <a href="#contact" class="card-btn">
-          Demander les détails
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="card-image">
-        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=80">
-        <span class="tag">À louer</span>
-      </div>
-
-      <div class="card-body">
-
-        <h3>Appartement familial</h3>
-
-        <div class="location">
-          📍 Nouakchott
-        </div>
-
-        <div class="features">
-          <span>🛏 3 chambres</span>
-          <span>🚿 2 salles de bain</span>
-        </div>
-
-        <a href="#contact" class="card-btn">
-          Demander les détails
-        </a>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-<section class="services" id="services">
-
-  <div class="section-title">
-
-    <h2>Nos services</h2>
-
-    <p style="color:#cbd5e1">
-      Un accompagnement adapté à votre projet immobilier
+    <p>
+      بعض العقارات المنشورة في إعلانات الوكالة
     </p>
 
   </div>
 
+  <div class="notice">
+    ⚠️ الأسعار والمعلومات التالية مأخوذة من منشورات عقارية سابقة.
+    يرجى التواصل مع DIAOUHA للتأكد من توفر العقار والسعر الحالي.
+  </div>
 
-  <div class="service-grid">
 
-    <div class="service">
+  <div class="properties">
 
-      <div class="service-icon">🏠</div>
 
-      <h3>Achat & Vente</h3>
+    <!-- العقار 1 -->
 
-      <p>
-        Accompagnement dans vos projets d’achat et de vente
-        de biens immobiliers.
-      </p>
+    <div class="card">
+
+      <img
+      src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+      alt="أرض للبيع">
+
+      <div class="card-body">
+
+        <span class="badge">أرض للبيع</span>
+
+        <h3>أرض 300 م²</h3>
+
+        <div class="location">
+          📍 Cité Plage - نواكشوط
+        </div>
+
+        <p>
+          قطعة أرض مناسبة للبناء والاستثمار.
+        </p>
+
+        <div class="details">
+          <span>📐 300 م²</span>
+          <span>🏷️ أرض</span>
+        </div>
+
+        <div class="price">
+          12,000,000 أوقية قديمة
+        </div>
+
+        <div class="card-buttons">
+
+          <a
+          class="whatsapp"
+          href="https://wa.me/22200000000"
+          target="_blank">
+          واتساب
+          </a>
+
+          <a
+          class="call"
+          href="tel:+22200000000">
+          اتصال
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
 
 
-    <div class="service">
+    <!-- العقار 2 -->
 
-      <div class="service-icon">🔑</div>
+    <div class="card">
 
-      <h3>Location</h3>
+      <img
+      src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=900&q=80"
+      alt="أرض 600 متر">
 
-      <p>
-        Découvrez des logements adaptés à vos besoins
-        et à votre projet.
-      </p>
+      <div class="card-body">
+
+        <span class="badge">أرض للبيع</span>
+
+        <h3>أرض 600 م²</h3>
+
+        <div class="location">
+          📍 Soukouk Secteur 5 - نواكشوط
+        </div>
+
+        <p>
+          مساحة كبيرة مناسبة لمشروع أو بناء عقار.
+        </p>
+
+        <div class="details">
+          <span>📐 600 م²</span>
+          <span>🏷️ أرض</span>
+        </div>
+
+        <div class="price">
+          33,000,000 أوقية قديمة
+        </div>
+
+        <div class="card-buttons">
+
+          <a
+          class="whatsapp"
+          href="https://wa.me/22200000000"
+          target="_blank">
+          واتساب
+          </a>
+
+          <a
+          class="call"
+          href="tel:+22200000000">
+          اتصال
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
 
 
-    <div class="service">
+    <!-- العقار 3 -->
 
-      <div class="service-icon">📈</div>
+    <div class="card">
 
-      <h3>Investissement</h3>
+      <img
+      src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80"
+      alt="أرض 800 متر">
 
-      <p>
-        Identifiez des opportunités immobilières
-        adaptées à votre stratégie.
-      </p>
+      <div class="card-body">
+
+        <span class="badge">فرصة استثمارية</span>
+
+        <h3>أرض 800 م²</h3>
+
+        <div class="location">
+          📍 طريق نواذيبو - قرب Hyundai
+        </div>
+
+        <p>
+          موقع مناسب للاستثمار وقريب من الطريق الرئيسي.
+        </p>
+
+        <div class="details">
+          <span>📐 800 م²</span>
+          <span>🏷️ أرض</span>
+        </div>
+
+        <div class="price">
+          25,000,000 أوقية قديمة
+        </div>
+
+        <div class="card-buttons">
+
+          <a
+          class="whatsapp"
+          href="https://wa.me/22200000000"
+          target="_blank">
+          واتساب
+          </a>
+
+          <a
+          class="call"
+          href="tel:+22200000000">
+          اتصال
+          </a>
+
+        </div>
+
+      </div>
 
     </div>
+
+
+    <!-- العقار 4 -->
+
+    <div class="card">
+
+      <img
+      src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=900&q=80"
+      alt="منزل للبيع">
+
+      <div class="card-body">
+
+        <span class="badge">منزل للبيع</span>
+
+        <h3>منزل في PK07</h3>
+
+        <div class="location">
+          📍 PK07 - نواكشوط
+        </div>
+
+        <p>
+          منزل معروض للبيع ضمن إعلانات الوكالة.
+        </p>
+
+        <div class="details">
+          <span>🏠 منزل</span>
+          <span>📍 PK07</span>
+        </div>
+
+        <div class="price">
+          25,000,000 أوقية قديمة
+        </div>
+
+        <div class="card-buttons">
+
+          <a
+          class="whatsapp"
+          href="https://wa.me/22200000000"
+          target="_blank">
+          واتساب
+          </a>
+
+          <a
+          class="call"
+          href="tel:+22200000000">
+          اتصال
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- العقار 5 -->
+
+    <div class="card">
+
+      <img
+      src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
+      alt="أرض للبيع">
+
+      <div class="card-body">
+
+        <span class="badge">جديد في القائمة</span>
+
+        <h3>أرض 500 م²</h3>
+
+        <div class="location">
+          📍 طريق نواذيبو - قرب Carrefour Barad
+        </div>
+
+        <p>
+          قطعة أرض بموقع استراتيجي في نواكشوط.
+        </p>
+
+        <div class="details">
+          <span>📐 500 م²</span>
+          <span>🏷️ أرض</span>
+        </div>
+
+        <div class="price">
+          السعر عند التواصل
+        </div>
+
+        <div class="card-buttons">
+
+          <a
+          class="whatsapp"
+          href="https://wa.me/22200000000"
+          target="_blank">
+          واتساب
+          </a>
+
+          <a
+          class="call"
+          href="tel:+22200000000">
+          اتصال
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
 
   </div>
 
 </section>
 
 
-<section id="apropos">
+<section id="about" class="about">
 
-  <div class="about">
+  <div class="about-content">
 
-    <div class="about-image">
+    <h2>عن DIAOUHA</h2>
 
-      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85">
-
-    </div>
-
-
-    <div class="about-text">
-
-      <h2>DIAOUHA AGENCE IMMOBILIÈRE</h2>
-
-      <p>
-        Votre partenaire pour vos projets immobiliers
-        en Mauritanie.
-      </p>
-
-      <p>
-        Notre objectif est de faciliter la recherche,
-        l’achat, la vente et la location de biens immobiliers
-        grâce à un accompagnement simple et professionnel.
-      </p>
-
-      <div class="check">✓ Recherche de biens</div>
-      <div class="check">✓ Achat et vente</div>
-      <div class="check">✓ Location</div>
-      <div class="check">✓ Terrains et opportunités</div>
-      <div class="check">✓ Accompagnement personnalisé</div>
-
-    </div>
+    <p>
+      DIAOUHA وكالة عقارية تهدف إلى تسهيل الوصول
+      إلى العقارات وفرص الاستثمار في موريتانيا،
+      مع توفير طريقة مباشرة للتواصل مع المعلنين.
+    </p>
 
   </div>
 
 </section>
 
 
-<section class="contact" id="contact">
+<section id="contact">
+
+  <div class="section-title">
+
+    <h2>تواصل معنا</h2>
+
+    <p>
+      هل تبحث عن عقار أو تريد عرض عقارك؟
+    </p>
+
+  </div>
 
   <div class="contact-box">
 
-    <h2>Parlons de votre projet</h2>
+    <h2>تحدث مع DIAOUHA</h2>
 
     <p>
-      Vous souhaitez acheter, vendre ou louer un bien ?
-      Contactez DIAOUHA AGENCE IMMOBILIÈRE.
+      تواصل معنا لمعرفة الأسعار الحالية
+      وتوفر العقارات.
     </p>
 
+    <br>
 
-    <div class="contact-info">
-
-      <div class="info">
-        <strong>📍 Localisation</strong>
-        Nouakchott, Mauritanie
-      </div>
-
-      <div class="info">
-        <strong>📱 WhatsApp</strong>
-        Contact de l’agence à renseigner
-      </div>
-
-      <div class="info">
-        <strong>📞 Téléphone</strong>
-        Numéro de l’agence à renseigner
-      </div>
-
-    </div>
-
-
-    <a href="#contact" class="btn btn-primary">
-      Prendre rendez-vous
+    <a
+    class="btn"
+    href="https://wa.me/22200000000"
+    target="_blank">
+    💬 تواصل عبر واتساب
     </a>
 
   </div>
@@ -836,17 +656,12 @@ footer strong{
 
 <footer>
 
-  <strong>DIAOUHA AGENCE IMMOBILIÈRE</strong>
-
+  © 2026 DIAOUHA - Agence Immobilière
   <br>
-
-  Votre partenaire immobilier en Mauritanie.
-
-  <br><br>
-
-  © 2026 DIAOUHA — Tous droits réservés.
+  نواكشوط - موريتانيا
 
 </footer>
+
 
 </body>
 </html>

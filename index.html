@@ -3,151 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ملفي الرقمي | تصميم وذكاء اصطناعي</title>
+<title>DIAOUHA | وكالة عقارية</title>
 
 <style>
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
+*{box-sizing:border-box}
 body{
+margin:0;
 font-family:Arial,sans-serif;
-background:#f4f6f9;
+background:#f5f6f8;
 color:#222;
-line-height:1.8;
 }
-
 header{
 background:#111827;
 color:white;
 padding:18px;
 text-align:center;
 }
-
-.logo{
-font-size:24px;
-font-weight:bold;
-}
+header h1{margin:0;font-size:28px}
+header p{margin:8px 0 0;color:#d1d5db}
 
 nav{
-margin-top:10px;
+background:white;
+padding:12px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:5;
+box-shadow:0 2px 8px #0001;
 }
-
 nav a{
-color:white;
+margin:0 8px;
 text-decoration:none;
-margin:8px;
+color:#111827;
+font-weight:bold;
 }
 
 .hero{
-background:linear-gradient(135deg,#111827,#2563eb);
-color:white;
+padding:55px 20px;
 text-align:center;
-padding:70px 20px;
+background:linear-gradient(135deg,#1f2937,#374151);
+color:white;
 }
-
-.hero h1{
-font-size:38px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:19px;
-margin-bottom:25px;
-}
+.hero h2{font-size:34px;margin:0 0 15px}
+.hero p{font-size:18px;color:#e5e7eb}
 
 .btn{
 display:inline-block;
-background:#2563eb;
+padding:13px 22px;
+background:#16a34a;
 color:white;
 text-decoration:none;
-padding:12px 24px;
 border-radius:10px;
-margin-top:15px;
-}
-
-.hero .btn{
-background:white;
-color:#2563eb;
+font-weight:bold;
+margin-top:10px;
 }
 
 section{
+padding:35px 18px;
 max-width:1100px;
 margin:auto;
-padding:60px 20px;
+}
+section h2{text-align:center;margin-bottom:25px}
+
+.search{
+background:white;
+padding:18px;
+border-radius:15px;
+box-shadow:0 3px 12px #0001;
+margin-bottom:25px;
+}
+.search input,.search select{
+width:100%;
+padding:13px;
+margin:6px 0;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
 }
 
-.title{
-text-align:center;
-font-size:30px;
-margin-bottom:35px;
-}
-
-.services{
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.service{
-background:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
-
-.service-icon{
-font-size:45px;
-}
-
-.portfolio{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.work{
+.card{
 background:white;
 border-radius:15px;
 overflow:hidden;
-box-shadow:0 4px 15px rgba(0,0,0,.08);
+box-shadow:0 4px 15px #0001;
 }
-
-.work img{
+.card img{
 width:100%;
-display:block;
+height:190px;
+object-fit:cover;
 }
-
-.work-content{
-padding:20px;
-}
-
-.work-content span{
-color:#2563eb;
+.card-content{padding:17px}
+.card h3{margin-top:0}
+.price{
+font-size:20px;
 font-weight:bold;
+color:#16a34a;
 }
-
-.work h3{
-margin:8px 0;
-}
-
-.about{
-background:white;
-padding:30px;
-border-radius:15px;
-}
-
-.contact{
-background:#111827;
-color:white;
-text-align:center;
-padding:40px 20px;
-border-radius:15px;
-}
+.location{color:#666}
 
 footer{
 background:#111827;
@@ -156,243 +114,29 @@ text-align:center;
 padding:25px;
 margin-top:30px;
 }
-
-@media(max-width:600px){
-
-.hero h1{
-font-size:30px;
-}
-
-nav a{
-display:inline-block;
-margin:4px;
-}
-
-}
 </style>
-
 </head>
 
 <body>
 
-
 <header>
-
-<div class="logo">
-ملفي الرقمي
-</div>
+<h1>DIAOUHA</h1>
+<p>وكالة عقارية في موريتانيا</p>
+</header>
 
 <nav>
-<a href="#services">خدماتي</a>
-<a href="#portfolio">أعمالي</a>
-<a href="#about">من أنا</a>
+<a href="#home">الرئيسية</a>
+<a href="#properties">العقارات</a>
+<a href="#about">من نحن</a>
 <a href="#contact">تواصل</a>
 </nav>
 
-</header>
-
-
-<section class="hero">
-
-<h1>
-صانع محتوى رقمي
-</h1>
-
-<p>
-تصميم • ذكاء اصطناعي • محتوى إبداعي
-</p>
-
-<a class="btn" href="#contact">
-اطلب خدمتك
-</a>
-
-</section>
-
-
-<section id="services">
-
-<h2 class="title">
-خدماتي
-</h2>
-
-<div class="services">
-
-<div class="service">
-<div class="service-icon">🎨</div>
-<h3>التصميم</h3>
-<p>تصميم إعلانات وصور احترافية.</p>
+<div class="hero" id="home">
+<h2>ابحث عن عقارك بسهولة</h2>
+<p>منازل، شقق، أراضٍ، مكاتب ومحلات في موريتانيا</p>
+<a class="btn" href="#properties">تصفح العقارات</a>
 </div>
 
-<div class="service">
-<div class="service-icon">🤖</div>
-<h3>الذكاء الاصطناعي</h3>
-<p>إنشاء صور ومحتوى باستخدام الذكاء الاصطناعي.</p>
-</div>
+<section id="properties">
 
-<div class="service">
-<div class="service-icon">🎬</div>
-<h3>أغلفة الفيديو</h3>
-<p>تصميم أغلفة جذابة لليوتيوب وفيسبوك.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="portfolio">
-
-<h2 class="title">
-نماذج من أعمالي
-</h2>
-
-<div class="portfolio">
-
-
-<!-- النموذج الأول -->
-
-<div class="work">
-
-<img src="file_000000003cfc81f4a09b6ac2e0b29423.png"
-alt="إعلان تجاري احترافي">
-
-<div class="work-content">
-
-<span>النموذج 1 • تصميم</span>
-
-<h3>
-إعلان تجاري احترافي
-</h3>
-
-<p>
-إعلان عصري مناسب للمشاريع والسوشيال ميديا.
-</p>
-
-<a class="btn" href="#contact">
-اطلب تصميمًا
-</a>
-
-</div>
-
-</div>
-
-
-<!-- النموذج الثاني -->
-
-<div class="work">
-
-<img src="a_highly_detailed_cinematic_photoreal_fantasy.png"
-alt="صورة إبداعية بالذكاء الاصطناعي">
-
-<div class="work-content">
-
-<span>النموذج 2 • ذكاء اصطناعي</span>
-
-<h3>
-صورة إبداعية
-</h3>
-
-<p>
-صورة إبداعية تم تصميمها باستخدام الذكاء الاصطناعي.
-</p>
-
-<a class="btn" href="#contact">
-اطلب صورة
-</a>
-
-</div>
-
-</div>
-
-
-<!-- النموذج الثالث -->
-
-<div class="work">
-
-<img src="file_0000000061108210a3b090f9f0af3d33.png"
-alt="غلاف فيديو احترافي">
-
-<div class="work-content">
-
-<span>النموذج 3 • فيديو</span>
-
-<h3>
-غلاف فيديو احترافي
-</h3>
-
-<p>
-غلاف جذاب لفيديوهات YouTube وFacebook.
-</p>
-
-<a class="btn" href="#contact">
-اطلب غلافًا
-</a>
-
-</div>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-<section id="about">
-
-<h2 class="title">
-من أنا
-</h2>
-
-<div class="about">
-
-<p>
-مرحبًا، أنا صانع محتوى رقمي.
-</p>
-
-<p>
-أقدّم تصميمات وصورًا إبداعية باستخدام التصميم والذكاء الاصطناعي.
-</p>
-
-<p>
-هدفي تقديم أعمال بسيطة واحترافية تساعد أصحاب المشاريع وصناع المحتوى.
-</p>
-
-</div>
-
-</section>
-
-
-<section id="contact">
-
-<div class="contact">
-
-<h2>
-تواصل معي
-</h2>
-
-<p>
-هل تريد تصميمًا أو صورة أو غلاف فيديو؟
-</p>
-
-<a class="btn"
-href="https://wa.me/22233043366">
-واتساب: 33043366
-</a>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<p>
-© 2026 ملفي الرقمي
-</p>
-
-</footer>
-
-
-</body>
-</html>
+<h2>العقارات المتاحة</h2>

@@ -3,271 +3,289 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>DIAOUHA | وكالة عقارية في موريتانيا</title>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
-  font-family:Arial,Tahoma,sans-serif;
-  background:#f4f6f8;
-  color:#172033;
-  line-height:1.7;
+font-family:Arial,Tahoma,sans-serif;
+background:#f5f7f9;
+color:#172033;
+line-height:1.7
 }
 
 header{
-  background:#101827;
-  color:white;
-  padding:18px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:1000;
+background:#101827;
+color:#fff;
+padding:17px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:100
 }
 
 .logo{
-  font-size:25px;
-  font-weight:bold;
-  letter-spacing:1px;
+font-size:26px;
+font-weight:bold;
+letter-spacing:1px
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-right:20px;
-  font-size:15px;
+color:#fff;
+text-decoration:none;
+margin:0 8px;
+font-size:14px
 }
 
 .hero{
-  min-height:430px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:60px 20px;
-  background:
-  linear-gradient(rgba(10,20,35,.75),rgba(10,20,35,.75)),
-  url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80")
-  center/cover;
-  color:white;
+min-height:470px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:50px 20px;
+background:
+linear-gradient(rgba(8,18,30,.72),rgba(8,18,30,.72)),
+url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85")
+center/cover
 }
 
 .hero-content{
-  max-width:750px;
+max-width:800px;
+color:white
 }
 
 .hero h1{
-  font-size:42px;
-  margin-bottom:15px;
+font-size:44px;
+margin-bottom:12px
 }
 
 .hero p{
-  font-size:19px;
-  margin-bottom:25px;
+font-size:19px;
+margin-bottom:25px
 }
 
 .btn{
-  display:inline-block;
-  background:#d6a84f;
-  color:#111827;
-  padding:13px 25px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:5px;
+display:inline-block;
+padding:13px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+background:#d7aa50;
+color:#111827;
+margin:5px
 }
 
-.btn.dark{
-  background:white;
+.btn.white{
+background:#fff
 }
 
 section{
-  padding:55px 7%;
+padding:60px 6%
 }
 
-.section-title{
-  text-align:center;
-  margin-bottom:35px;
+.title{
+text-align:center;
+margin-bottom:35px
 }
 
-.section-title h2{
-  font-size:30px;
-  margin-bottom:8px;
+.title h2{
+font-size:31px;
+margin-bottom:8px
 }
 
-.section-title p{
-  color:#687386;
-}
-
-.properties{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
-}
-
-.card{
-  background:white;
-  border-radius:15px;
-  overflow:hidden;
-  box-shadow:0 6px 22px rgba(0,0,0,.08);
-  transition:.25s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-.card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
-}
-
-.card-body{
-  padding:20px;
-}
-
-.badge{
-  display:inline-block;
-  background:#eef4ff;
-  color:#2457a6;
-  padding:5px 10px;
-  border-radius:20px;
-  font-size:12px;
-  margin-bottom:8px;
-}
-
-.card h3{
-  font-size:21px;
-  margin-bottom:8px;
-}
-
-.location{
-  color:#687386;
-  font-size:14px;
-  margin-bottom:10px;
-}
-
-.price{
-  color:#b47b17;
-  font-size:21px;
-  font-weight:bold;
-  margin:12px 0;
-}
-
-.details{
-  display:flex;
-  justify-content:space-between;
-  background:#f7f8fa;
-  padding:10px;
-  border-radius:8px;
-  font-size:14px;
-  margin-bottom:15px;
-}
-
-.card-buttons{
-  display:flex;
-  gap:8px;
-}
-
-.card-buttons a{
-  flex:1;
-  text-align:center;
-  padding:10px;
-  border-radius:7px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:14px;
-}
-
-.whatsapp{
-  background:#25D366;
-  color:white;
-}
-
-.call{
-  background:#101827;
-  color:white;
-}
-
-.about{
-  background:#101827;
-  color:white;
-}
-
-.about-content{
-  max-width:850px;
-  margin:auto;
-  text-align:center;
-}
-
-.about p{
-  color:#d7dce5;
-  margin-top:15px;
-}
-
-.contact-box{
-  background:white;
-  max-width:750px;
-  margin:auto;
-  padding:35px;
-  border-radius:15px;
-  text-align:center;
-  box-shadow:0 6px 22px rgba(0,0,0,.07);
-}
-
-.contact-box h2{
-  margin-bottom:10px;
-}
-
-footer{
-  background:#0b111c;
-  color:#aeb6c3;
-  text-align:center;
-  padding:25px;
-  font-size:14px;
+.title p{
+color:#6c7685
 }
 
 .notice{
-  background:#fff7df;
-  color:#795b16;
-  border-right:4px solid #d6a84f;
-  padding:15px;
-  border-radius:8px;
-  margin:0 auto 30px;
-  max-width:1000px;
+max-width:1000px;
+margin:0 auto 30px;
+background:#fff5d8;
+border-right:5px solid #d7aa50;
+padding:15px;
+border-radius:8px;
+font-size:14px;
+color:#725815
+}
+
+.properties{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(285px,1fr));
+gap:25px
+}
+
+.card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 7px 25px rgba(0,0,0,.08);
+transition:.25s
+}
+
+.card:hover{
+transform:translateY(-5px)
+}
+
+.card-img{
+position:relative
+}
+
+.card-img img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block
+}
+
+.demo{
+position:absolute;
+top:12px;
+right:12px;
+background:rgba(0,0,0,.7);
+color:#fff;
+padding:5px 10px;
+border-radius:20px;
+font-size:11px
+}
+
+.card-body{
+padding:20px
+}
+
+.tag{
+display:inline-block;
+background:#edf3fb;
+color:#285d98;
+padding:4px 10px;
+border-radius:20px;
+font-size:12px;
+margin-bottom:8px
+}
+
+.card h3{
+font-size:21px;
+margin-bottom:7px
+}
+
+.location{
+color:#697586;
+font-size:14px;
+margin-bottom:10px
+}
+
+.description{
+font-size:14px;
+color:#555;
+margin-bottom:10px
+}
+
+.details{
+display:flex;
+justify-content:space-between;
+background:#f5f7f9;
+padding:10px;
+border-radius:8px;
+font-size:13px;
+margin-bottom:12px
+}
+
+.price{
+font-size:20px;
+font-weight:bold;
+color:#b27b18;
+margin:12px 0
+}
+
+.buttons{
+display:flex;
+gap:8px
+}
+
+.buttons a{
+flex:1;
+text-align:center;
+padding:10px;
+border-radius:7px;
+text-decoration:none;
+font-weight:bold;
+font-size:14px
+}
+
+.whatsapp{
+background:#25D366;
+color:#fff
+}
+
+.call{
+background:#101827;
+color:#fff
+}
+
+.about{
+background:#101827;
+color:#fff
+}
+
+.about-box{
+max-width:850px;
+margin:auto;
+text-align:center
+}
+
+.about-box p{
+color:#d4dae2;
+margin-top:15px
+}
+
+.contact{
+background:#f5f7f9
+}
+
+.contact-box{
+background:#fff;
+max-width:700px;
+margin:auto;
+padding:35px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 7px 25px rgba(0,0,0,.07)
+}
+
+footer{
+background:#090f19;
+color:#aeb6c2;
+text-align:center;
+padding:25px;
+font-size:13px
 }
 
 @media(max-width:700px){
 
-  header{
-    flex-direction:column;
-    gap:10px;
-  }
+header{
+flex-direction:column;
+gap:10px
+}
 
-  nav a{
-    margin:0 6px;
-    font-size:13px;
-  }
+nav a{
+font-size:12px;
+margin:0 4px
+}
 
-  .hero h1{
-    font-size:31px;
-  }
+.hero h1{
+font-size:32px
+}
 
-  .hero p{
-    font-size:16px;
-  }
+.hero p{
+font-size:16px
+}
 
-  section{
-    padding:40px 5%;
-  }
+section{
+padding:45px 5%
+}
 }
 </style>
 </head>
@@ -276,392 +294,474 @@ footer{
 
 <header>
 
-  <div class="logo">DIAOUHA</div>
+<div class="logo">DIAOUHA</div>
 
-  <nav>
-    <a href="#properties">العقارات</a>
-    <a href="#about">من نحن</a>
-    <a href="#contact">تواصل معنا</a>
-  </nav>
+<nav>
+<a href="#properties">العقارات</a>
+<a href="#about">من نحن</a>
+<a href="#contact">تواصل معنا</a>
+</nav>
 
 </header>
 
 
 <section class="hero">
 
-  <div class="hero-content">
+<div class="hero-content">
 
-    <h1>وكالة DIAOUHA العقارية</h1>
+<h1>DIAOUHA</h1>
 
-    <p>
-      نساعدك في العثور على العقار المناسب
-      للبيع والاستثمار في موريتانيا
-    </p>
+<p>
+وكالة عقارية موريتانية تساعدك على
+شراء وبيع واستئجار العقارات
+</p>
 
-    <a href="#properties" class="btn">
-      تصفح العقارات
-    </a>
+<a href="#properties" class="btn">
+تصفح العقارات
+</a>
 
-    <a href="#contact" class="btn dark">
-      تواصل معنا
-    </a>
+<a href="#contact" class="btn white">
+تواصل معنا
+</a>
 
-  </div>
+</div>
 
 </section>
 
 
 <section id="properties">
 
-  <div class="section-title">
+<div class="title">
 
-    <h2>عقارات مختارة</h2>
+<h2>العقارات</h2>
 
-    <p>
-      بعض العقارات المنشورة في إعلانات الوكالة
-    </p>
+<p>
+عروض عقارية في نواكشوط ومناطق مختلفة
+</p>
 
-  </div>
+</div>
 
-  <div class="notice">
-    ⚠️ الأسعار والمعلومات التالية مأخوذة من منشورات عقارية سابقة.
-    يرجى التواصل مع DIAOUHA للتأكد من توفر العقار والسعر الحالي.
-  </div>
 
+<div class="notice">
 
-  <div class="properties">
+⚠️ الصور الموجودة في هذه النسخة صور توضيحية فقط.
+الأسعار والمعلومات مأخوذة من منشورات DIAOUHA السابقة،
+ويجب التواصل مع الوكالة للتأكد من التوفر والسعر الحالي.
 
+</div>
 
-    <!-- العقار 1 -->
 
-    <div class="card">
+<div class="properties">
 
-      <img
-      src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
-      alt="أرض للبيع">
 
-      <div class="card-body">
+<!-- 300 متر -->
 
-        <span class="badge">أرض للبيع</span>
+<div class="card">
 
-        <h3>أرض 300 م²</h3>
+<div class="card-img">
 
-        <div class="location">
-          📍 Cité Plage - نواكشوط
-        </div>
+<img
+src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=85"
+alt="أرض في نواكشوط">
 
-        <p>
-          قطعة أرض مناسبة للبناء والاستثمار.
-        </p>
+<span class="demo">صورة توضيحية</span>
 
-        <div class="details">
-          <span>📐 300 م²</span>
-          <span>🏷️ أرض</span>
-        </div>
+</div>
 
-        <div class="price">
-          12,000,000 أوقية قديمة
-        </div>
+<div class="card-body">
 
-        <div class="card-buttons">
+<span class="tag">أرض للبيع</span>
 
-          <a
-          class="whatsapp"
-          href="https://wa.me/22200000000"
-          target="_blank">
-          واتساب
-          </a>
+<h3>أرض 300 م²</h3>
 
-          <a
-          class="call"
-          href="tel:+22200000000">
-          اتصال
-          </a>
+<div class="location">
+📍 Cité Plage - نواكشوط
+</div>
 
-        </div>
+<p class="description">
+أرض قريبة من الطريق ومناسبة للبناء والاستثمار.
+</p>
 
-      </div>
+<div class="details">
+<span>📐 300 م²</span>
+<span>📄 عنوان عقاري</span>
+</div>
 
-    </div>
+<div class="price">
+12,000,000 أوقية قديمة
+</div>
 
+<div class="buttons">
 
-    <!-- العقار 2 -->
+<a class="whatsapp"
+href="https://wa.me/22226789149"
+target="_blank">
+واتساب
+</a>
 
-    <div class="card">
+<a class="call"
+href="tel:+22226789149">
+اتصال
+</a>
 
-      <img
-      src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=900&q=80"
-      alt="أرض 600 متر">
+</div>
 
-      <div class="card-body">
+</div>
+</div>
 
-        <span class="badge">أرض للبيع</span>
 
-        <h3>أرض 600 م²</h3>
+<!-- 600 متر -->
 
-        <div class="location">
-          📍 Soukouk Secteur 5 - نواكشوط
-        </div>
+<div class="card">
 
-        <p>
-          مساحة كبيرة مناسبة لمشروع أو بناء عقار.
-        </p>
+<div class="card-img">
 
-        <div class="details">
-          <span>📐 600 م²</span>
-          <span>🏷️ أرض</span>
-        </div>
+<img
+src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=1000&q=85"
+alt="أرض في Soukouk">
 
-        <div class="price">
-          33,000,000 أوقية قديمة
-        </div>
+<span class="demo">صورة توضيحية</span>
 
-        <div class="card-buttons">
+</div>
 
-          <a
-          class="whatsapp"
-          href="https://wa.me/22200000000"
-          target="_blank">
-          واتساب
-          </a>
+<div class="card-body">
 
-          <a
-          class="call"
-          href="tel:+22200000000">
-          اتصال
-          </a>
+<span class="tag">أرض للبيع</span>
 
-        </div>
+<h3>أرض 600 م²</h3>
 
-      </div>
+<div class="location">
+📍 Soukouk - Secteur 5
+</div>
 
-    </div>
+<p class="description">
+قطعة أرض في حي سكني هادئ، بالقرب من الطريق الرئيسي.
+</p>
 
+<div class="details">
+<span>📐 600 م²</span>
+<span>🏘️ حي سكني</span>
+</div>
 
-    <!-- العقار 3 -->
+<div class="price">
+33,000,000 أوقية قديمة
+</div>
 
-    <div class="card">
+<div class="buttons">
 
-      <img
-      src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=900&q=80"
-      alt="أرض 800 متر">
+<a class="whatsapp"
+href="https://wa.me/22226789149"
+target="_blank">
+واتساب
+</a>
 
-      <div class="card-body">
+<a class="call"
+href="tel:+22226789149">
+اتصال
+</a>
 
-        <span class="badge">فرصة استثمارية</span>
+</div>
 
-        <h3>أرض 800 م²</h3>
+</div>
+</div>
 
-        <div class="location">
-          📍 طريق نواذيبو - قرب Hyundai
-        </div>
 
-        <p>
-          موقع مناسب للاستثمار وقريب من الطريق الرئيسي.
-        </p>
+<!-- 800 متر -->
 
-        <div class="details">
-          <span>📐 800 م²</span>
-          <span>🏷️ أرض</span>
-        </div>
+<div class="card">
 
-        <div class="price">
-          25,000,000 أوقية قديمة
-        </div>
+<div class="card-img">
 
-        <div class="card-buttons">
+<img
+src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1000&q=85"
+alt="أرض طريق نواذيبو">
 
-          <a
-          class="whatsapp"
-          href="https://wa.me/22200000000"
-          target="_blank">
-          واتساب
-          </a>
+<span class="demo">صورة توضيحية</span>
 
-          <a
-          class="call"
-          href="tel:+22200000000">
-          اتصال
-          </a>
+</div>
 
-        </div>
+<div class="card-body">
 
-      </div>
+<span class="tag">فرصة استثمارية</span>
 
-    </div>
+<h3>أرض 800 م²</h3>
 
+<div class="location">
+📍 طريق نواذيبو - قرب Hyundai
+</div>
 
-    <!-- العقار 4 -->
+<p class="description">
+موقع قريب من الطريق الرئيسي، مناسب للاستثمار والبناء.
+</p>
 
-    <div class="card">
+<div class="details">
+<span>📐 800 م²</span>
+<span>🚗 قرب الطريق</span>
+</div>
 
-      <img
-      src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=900&q=80"
-      alt="منزل للبيع">
+<div class="price">
+25,000,000 أوقية قديمة
+</div>
 
-      <div class="card-body">
+<div class="buttons">
 
-        <span class="badge">منزل للبيع</span>
+<a class="whatsapp"
+href="https://wa.me/22226789149"
+target="_blank">
+واتساب
+</a>
 
-        <h3>منزل في PK07</h3>
+<a class="call"
+href="tel:+22226789149">
+اتصال
+</a>
 
-        <div class="location">
-          📍 PK07 - نواكشوط
-        </div>
+</div>
 
-        <p>
-          منزل معروض للبيع ضمن إعلانات الوكالة.
-        </p>
+</div>
+</div>
 
-        <div class="details">
-          <span>🏠 منزل</span>
-          <span>📍 PK07</span>
-        </div>
 
-        <div class="price">
-          25,000,000 أوقية قديمة
-        </div>
+<!-- منزل PK07 -->
 
-        <div class="card-buttons">
+<div class="card">
 
-          <a
-          class="whatsapp"
-          href="https://wa.me/22200000000"
-          target="_blank">
-          واتساب
-          </a>
+<div class="card-img">
 
-          <a
-          class="call"
-          href="tel:+22200000000">
-          اتصال
-          </a>
+<img
+src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85"
+alt="منزل في PK07">
 
-        </div>
+<span class="demo">صورة توضيحية</span>
 
-      </div>
+</div>
 
-    </div>
+<div class="card-body">
 
+<span class="tag">منزل للبيع</span>
 
-    <!-- العقار 5 -->
+<h3>منزل R+2</h3>
 
-    <div class="card">
+<div class="location">
+📍 PK07 - نواكشوط
+</div>
 
-      <img
-      src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
-      alt="أرض للبيع">
+<p class="description">
+منزل بطوابق متعددة، قريب من الطريق الرئيسي.
+</p>
 
-      <div class="card-body">
+<div class="details">
+<span>🏠 منزل</span>
+<span>📍 PK07</span>
+</div>
 
-        <span class="badge">جديد في القائمة</span>
+<div class="price">
+25,000,000 أوقية قديمة
+</div>
 
-        <h3>أرض 500 م²</h3>
+<div class="buttons">
 
-        <div class="location">
-          📍 طريق نواذيبو - قرب Carrefour Barad
-        </div>
+<a class="whatsapp"
+href="https://wa.me/22226789149"
+target="_blank">
+واتساب
+</a>
 
-        <p>
-          قطعة أرض بموقع استراتيجي في نواكشوط.
-        </p>
+<a class="call"
+href="tel:+22226789149">
+اتصال
+</a>
 
-        <div class="details">
-          <span>📐 500 م²</span>
-          <span>🏷️ أرض</span>
-        </div>
+</div>
 
-        <div class="price">
-          السعر عند التواصل
-        </div>
+</div>
+</div>
 
-        <div class="card-buttons">
 
-          <a
-          class="whatsapp"
-          href="https://wa.me/22200000000"
-          target="_blank">
-          واتساب
-          </a>
+<!-- 600 متر Tevragh Zeina -->
 
-          <a
-          class="call"
-          href="tel:+22200000000">
-          اتصال
-          </a>
+<div class="card">
 
-        </div>
+<div class="card-img">
 
-      </div>
+<img
+src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+alt="أرض Tevragh Zeina">
 
-    </div>
+<span class="demo">صورة توضيحية</span>
 
+</div>
 
-  </div>
+<div class="card-body">
+
+<span class="tag">أرض للبيع</span>
+
+<h3>أرض 600 م²</h3>
+
+<div class="location">
+📍 F. Nord - Tevragh Zeina
+</div>
+
+<p class="description">
+موقع قريب من السفارة الهندية والجامعة اللبنانية.
+</p>
+
+<div class="details">
+<span>📐 600 م²</span>
+<span>📍 Tevragh Zeina</span>
+</div>
+
+<div class="price">
+55,000,000 أوقية قديمة
+</div>
+
+<div class="buttons">
+
+<a class="whatsapp"
+href="https://wa.me/22226789149"
+target="_blank">
+واتساب
+</a>
+
+<a class="call"
+href="tel:+22226789149">
+اتصال
+</a>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- 500 متر -->
+
+<div class="card">
+
+<div class="card-img">
+
+<img
+src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85"
+alt="أرض قرب Carrefour Barad">
+
+<span class="demo">صورة توضيحية</span>
+
+</div>
+
+<div class="card-body">
+
+<span class="tag">أرض للبيع</span>
+
+<h3>أرض 500 م²</h3>
+
+<div class="location">
+📍 طريق نواذيبو - قبل Carrefour Barad
+</div>
+
+<p class="description">
+أرض قريبة من الطريق الرئيسي.
+السعر عند التواصل مع الوكالة.
+</p>
+
+<div class="details">
+<span>📐 500 م²</span>
+<span>🛣️ قرب الطريق</span>
+</div>
+
+<div class="price">
+السعر عند التواصل
+</div>
+
+<div class="buttons">
+
+<a class="whatsapp"
+href="https://wa.me/22226789149"
+target="_blank">
+واتساب
+</a>
+
+<a class="call"
+href="tel:+22226789149">
+اتصال
+</a>
+
+</div>
+
+</div>
+</div>
+
+
+</div>
 
 </section>
 
 
 <section id="about" class="about">
 
-  <div class="about-content">
+<div class="about-box">
 
-    <h2>عن DIAOUHA</h2>
+<h2>عن DIAOUHA</h2>
 
-    <p>
-      DIAOUHA وكالة عقارية تهدف إلى تسهيل الوصول
-      إلى العقارات وفرص الاستثمار في موريتانيا،
-      مع توفير طريقة مباشرة للتواصل مع المعلنين.
-    </p>
+<p>
+DIAOUHA AGENCE IMMOBILIÈRE وكالة عقارية
+100% رقمية مقرها نواكشوط، وتعمل في
+المعاملات العقارية وإدارة العقارات والاستشارات.
+</p>
 
-  </div>
+</div>
 
 </section>
 
 
-<section id="contact">
+<section id="contact" class="contact">
 
-  <div class="section-title">
+<div class="title">
 
-    <h2>تواصل معنا</h2>
+<h2>هل تبحث عن عقار؟</h2>
 
-    <p>
-      هل تبحث عن عقار أو تريد عرض عقارك؟
-    </p>
+<p>
+تواصل مباشرة مع DIAOUHA
+</p>
 
-  </div>
+</div>
 
-  <div class="contact-box">
+<div class="contact-box">
 
-    <h2>تحدث مع DIAOUHA</h2>
+<h2>📞 تواصل معنا</h2>
 
-    <p>
-      تواصل معنا لمعرفة الأسعار الحالية
-      وتوفر العقارات.
-    </p>
+<p>
+للاستفسار عن الأسعار والتوفر والمزيد من العقارات
+</p>
 
-    <br>
+<br>
 
-    <a
-    class="btn"
-    href="https://wa.me/22200000000"
-    target="_blank">
-    💬 تواصل عبر واتساب
-    </a>
+<a
+class="btn"
+href="https://wa.me/22226789149"
+target="_blank">
+💬 واتساب DIAOUHA
+</a>
 
-  </div>
+<a
+class="btn"
+href="tel:+22226789149">
+📞 اتصل الآن
+</a>
+
+</div>
 
 </section>
 
 
 <footer>
 
-  © 2026 DIAOUHA - Agence Immobilière
-  <br>
-  نواكشوط - موريتانيا
+© 2026 DIAOUHA AGENCE IMMOBILIÈRE
+
+<br>
+
+نواكشوط - موريتانيا
 
 </footer>
-
 
 </body>
 </html>

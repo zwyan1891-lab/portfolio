@@ -1,448 +1,419 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DIAOUHA AGENCE IMMOBILIÈRE | Mauritanie</title>
+<title>DIAOUHA | Agence Immobilière en Mauritanie</title>
 
 <style>
 *{
-box-sizing:border-box;
-margin:0;
-padding:0;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 html{
-scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,Tahoma,sans-serif;
-background:#f7f7f5;
-color:#172033;
-line-height:1.6;
+  font-family:Arial,Tahoma,sans-serif;
+  background:#f5f7f8;
+  color:#172033;
+  line-height:1.6;
 }
 
 header{
-position:sticky;
-top:0;
-z-index:1000;
-background:#0d1726;
-padding:16px 6%;
-display:flex;
-align-items:center;
-justify-content:space-between;
-box-shadow:0 3px 20px rgba(0,0,0,.18);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#101827;
+  color:white;
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .logo{
-color:#d6b36a;
-font-size:23px;
-font-weight:800;
-letter-spacing:.5px;
+  font-size:21px;
+  font-weight:bold;
+  letter-spacing:.5px;
+}
+
+.logo span{
+  color:#d6ad60;
 }
 
 nav a{
-color:#fff;
-text-decoration:none;
-margin-left:25px;
-font-size:14px;
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-size:15px;
 }
 
 nav a:hover{
-color:#d6b36a;
+  color:#d6ad60;
 }
 
 .hero{
-min-height:650px;
-display:flex;
-align-items:center;
-padding:80px 7%;
-color:#fff;
-
-background:
-linear-gradient(90deg,rgba(7,14,25,.94),rgba(7,14,25,.38)),
-url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85")
-center/cover;
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  padding:80px 7%;
+  color:white;
+  background:
+  linear-gradient(rgba(10,18,30,.68),rgba(10,18,30,.72)),
+  url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")
+  center/cover;
 }
 
 .hero-content{
-max-width:720px;
+  max-width:720px;
 }
 
-.small-title{
-display:inline-block;
-border:1px solid #d6b36a;
-color:#e3c57f;
-padding:7px 16px;
-border-radius:30px;
-margin-bottom:20px;
-font-size:14px;
+.badge{
+  display:inline-block;
+  background:#d6ad60;
+  color:#101827;
+  padding:8px 15px;
+  border-radius:30px;
+  font-weight:bold;
+  margin-bottom:20px;
 }
 
 .hero h1{
-font-size:55px;
-line-height:1.15;
-margin-bottom:20px;
-}
-
-.hero h1 span{
-color:#d6b36a;
+  font-size:54px;
+  line-height:1.1;
+  margin-bottom:22px;
 }
 
 .hero p{
-font-size:19px;
-color:#e1e5eb;
-max-width:650px;
-margin-bottom:30px;
+  font-size:20px;
+  color:#e5e7eb;
+  margin-bottom:30px;
 }
 
 .btn{
-display:inline-block;
-padding:13px 25px;
-border-radius:7px;
-text-decoration:none;
-font-weight:bold;
-margin:5px;
-transition:.25s;
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:5px;
 }
 
-.gold{
-background:#d6b36a;
-color:#101827;
+.btn-primary{
+  background:#d6ad60;
+  color:#101827;
 }
 
-.white{
-background:#fff;
-color:#101827;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-.stats{
-max-width:900px;
-margin:-45px auto 0;
-position:relative;
-background:#fff;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 10px 35px rgba(0,0,0,.12);
-}
-
-.stat{
-text-align:center;
-padding:25px;
-border-left:1px solid #eee;
-}
-
-.stat:last-child{
-border:0;
-}
-
-.stat strong{
-display:block;
-font-size:28px;
-color:#b28b45;
+.btn-light{
+  border:1px solid white;
+  color:white;
 }
 
 section{
-padding:80px 6%;
+  padding:80px 7%;
 }
 
 .section-title{
-text-align:center;
-margin-bottom:45px;
+  text-align:center;
+  margin-bottom:45px;
 }
 
 .section-title h2{
-font-size:35px;
-margin-bottom:8px;
+  font-size:35px;
+  margin-bottom:10px;
 }
 
 .section-title p{
-color:#737c8c;
+  color:#687386;
 }
 
-.filters{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:10px;
-margin-bottom:35px;
+.categories{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:15px;
 }
 
-.filter{
-background:#fff;
-border:1px solid #ddd;
-padding:9px 20px;
-border-radius:25px;
+.category{
+  background:white;
+  padding:25px 15px;
+  text-align:center;
+  border-radius:14px;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
+  text-decoration:none;
+  color:#172033;
+  transition:.3s;
 }
 
-.filter.active{
-background:#172033;
-color:#fff;
+.category:hover{
+  transform:translateY(-5px);
+  border-bottom:3px solid #d6ad60;
+}
+
+.category-icon{
+  font-size:30px;
+  margin-bottom:10px;
 }
 
 .properties{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
+  background:#fff;
+}
+
+.property-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
 }
 
 .card{
-background:#fff;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 25px rgba(0,0,0,.08);
-transition:.3s;
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 7px 25px rgba(0,0,0,.08);
+  transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
+  transform:translateY(-6px);
 }
 
 .card-image{
-position:relative;
+  height:230px;
+  position:relative;
+  overflow:hidden;
 }
 
 .card-image img{
-width:100%;
-height:230px;
-object-fit:cover;
-display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 .tag{
-position:absolute;
-top:14px;
-right:14px;
-background:#d6b36a;
-color:#111827;
-padding:5px 12px;
-border-radius:20px;
-font-size:12px;
-font-weight:bold;
+  position:absolute;
+  top:15px;
+  right:15px;
+  background:#d6ad60;
+  color:#101827;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:13px;
+  font-weight:bold;
 }
 
 .card-body{
-padding:20px;
+  padding:22px;
 }
 
 .card-body h3{
-font-size:20px;
-margin-bottom:4px;
+  margin-bottom:8px;
+  font-size:20px;
 }
 
 .location{
-color:#747d8d;
-font-size:14px;
-margin-bottom:10px;
-}
-
-.price{
-color:#ad8239;
-font-size:20px;
-font-weight:bold;
-margin:12px 0;
+  color:#697386;
+  margin-bottom:15px;
 }
 
 .features{
-display:flex;
-justify-content:space-between;
-font-size:13px;
-color:#667085;
-border-top:1px solid #eee;
-padding-top:12px;
+  display:flex;
+  gap:15px;
+  color:#687386;
+  font-size:14px;
+  margin-bottom:18px;
+  flex-wrap:wrap;
 }
 
-.card-buttons{
-display:flex;
-gap:8px;
-margin-top:17px;
-}
-
-.card-buttons a{
-flex:1;
-text-align:center;
-padding:9px;
-border-radius:7px;
-text-decoration:none;
-font-size:13px;
-font-weight:bold;
-}
-
-.details{
-background:#172033;
-color:#fff;
-}
-
-.whatsapp{
-background:#25D366;
-color:#fff;
-}
-
-.dark{
-background:#101827;
-color:#fff;
-}
-
-.dark .section-title p{
-color:#b7bfca;
+.card-btn{
+  display:block;
+  text-align:center;
+  padding:11px;
+  border-radius:8px;
+  background:#101827;
+  color:white;
+  text-decoration:none;
 }
 
 .services{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
+  background:#101827;
+  color:white;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
 }
 
 .service{
-background:#172033;
-border:1px solid rgba(255,255,255,.08);
-padding:32px 25px;
-border-radius:15px;
-text-align:center;
+  padding:35px 25px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:15px;
+  background:rgba(255,255,255,.04);
 }
 
-.icon{
-font-size:43px;
-margin-bottom:15px;
+.service-icon{
+  font-size:38px;
+  margin-bottom:15px;
 }
 
 .service h3{
-margin-bottom:10px;
+  margin-bottom:10px;
+  color:#d6ad60;
 }
 
 .service p{
-color:#b9c1cd;
-font-size:14px;
+  color:#cbd5e1;
 }
 
 .about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
 }
 
-.about img{
-width:100%;
-height:420px;
-object-fit:cover;
-border-radius:18px;
+.about-image img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-.about h2{
-font-size:36px;
-margin-bottom:18px;
+.about-text h2{
+  font-size:38px;
+  margin-bottom:20px;
 }
 
-.about p{
-color:#697386;
-margin-bottom:18px;
+.about-text p{
+  color:#657083;
+  margin-bottom:15px;
+}
+
+.check{
+  margin:12px 0;
+  font-weight:bold;
+}
+
+.contact{
+  background:#f0f2f4;
 }
 
 .contact-box{
-max-width:850px;
-margin:auto;
-background:#fff;
-padding:45px;
-border-radius:18px;
-text-align:center;
-box-shadow:0 8px 35px rgba(0,0,0,.08);
+  max-width:900px;
+  margin:auto;
+  background:white;
+  padding:45px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0 8px 30px rgba(0,0,0,.08);
 }
 
 .contact-box h2{
-font-size:32px;
-margin-bottom:10px;
+  font-size:35px;
+  margin-bottom:12px;
 }
 
 .contact-box p{
-color:#697386;
-margin-bottom:25px;
+  color:#687386;
+  margin-bottom:25px;
 }
 
-.contact-box a{
-display:inline-block;
-padding:13px 27px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-margin:5px;
+.contact-info{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+  margin:25px 0;
 }
 
-.call{
-background:#172033;
-color:#fff;
+.info{
+  padding:20px;
+  background:#f6f7f8;
+  border-radius:12px;
+}
+
+.info strong{
+  display:block;
+  margin-bottom:5px;
 }
 
 footer{
-background:#080f19;
-color:#9ba4b2;
-text-align:center;
-padding:35px 6%;
+  background:#0b111d;
+  color:#b8c0cc;
+  text-align:center;
+  padding:30px 15px;
 }
 
-.footer-logo{
-color:#d6b36a;
-font-size:23px;
-font-weight:bold;
-margin-bottom:8px;
+footer strong{
+  color:white;
 }
 
-@media(max-width:850px){
+@media(max-width:900px){
+  nav{
+    display:none;
+  }
 
-header{
-padding:15px 5%;
+  .hero h1{
+    font-size:42px;
+  }
+
+  .categories{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .property-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about{
+    grid-template-columns:1fr;
+  }
 }
 
-nav{
-display:none;
-}
+@media(max-width:600px){
+  section{
+    padding:60px 5%;
+  }
 
-.hero{
-min-height:570px;
-padding:60px 5%;
-text-align:center;
-justify-content:center;
-}
+  .hero{
+    min-height:600px;
+    padding:60px 5%;
+  }
 
-.hero h1{
-font-size:39px;
-}
+  .hero h1{
+    font-size:36px;
+  }
 
-.hero p{
-font-size:16px;
-}
+  .hero p{
+    font-size:17px;
+  }
 
-.stats{
-margin:-30px 5% 0;
-grid-template-columns:1fr;
-}
+  .property-grid{
+    grid-template-columns:1fr;
+  }
 
-.stat{
-border-left:0;
-border-bottom:1px solid #eee;
-}
+  .categories{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-.properties,
-.services,
-.about{
-grid-template-columns:1fr;
-}
+  .contact-info{
+    grid-template-columns:1fr;
+  }
 
-.about img{
-height:300px;
-}
+  .contact-box{
+    padding:30px 20px;
+  }
 
-section{
-padding:60px 5%;
-}
+  .logo{
+    font-size:17px;
+  }
 }
 </style>
 </head>
@@ -450,440 +421,430 @@ padding:60px 5%;
 <body>
 
 <header>
+  <div class="logo">
+    DIAOUHA <span>AGENCE IMMOBILIÈRE</span>
+  </div>
 
-<div class="logo">
-DIAOUHA AGENCE IMMOBILIÈRE
-</div>
-
-<nav>
-<a href="#home">Accueil</a>
-<a href="#properties">Propriétés</a>
-<a href="#services">Services</a>
-<a href="#about">À propos</a>
-<a href="#contact">Contact</a>
-</nav>
-
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#proprietes">Propriétés</a>
+    <a href="#services">Services</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 
-<section class="hero" id="home">
+<section class="hero" id="accueil">
 
-<div class="hero-content">
+  <div class="hero-content">
 
-<div class="small-title">
-Agence immobilière en Mauritanie
-</div>
+    <span class="badge">
+      Agence immobilière en Mauritanie
+    </span>
 
-<h1>
-Votre prochain <span>chez-vous</span> commence ici
-</h1>
+    <h1>
+      Trouvez le bien qui vous correspond.
+    </h1>
 
-<p>
-DIAOUHA AGENCE IMMOBILIÈRE vous accompagne dans
-l'achat, la vente et la location de biens immobiliers
-en Mauritanie.
-</p>
+    <p>
+      Découvrez des opportunités immobilières à Nouakchott
+      et bénéficiez d’un accompagnement professionnel pour
+      vos projets d’achat, de vente et de location.
+    </p>
 
-<a href="#properties" class="btn gold">
-Voir nos propriétés
-</a>
+    <a href="#proprietes" class="btn btn-primary">
+      Voir les propriétés
+    </a>
 
-<a href="#contact" class="btn white">
-Nous contacter
-</a>
+    <a href="#contact" class="btn btn-light">
+      Prendre rendez-vous
+    </a>
 
-</div>
+  </div>
 
 </section>
 
 
-<div class="stats">
-
-<div class="stat">
-<strong>+50</strong>
-Propriétés
-</div>
-
-<div class="stat">
-<strong>+20</strong>
-Clients
-</div>
-
-<div class="stat">
-<strong>24/7</strong>
-Disponibilité
-</div>
-
-</div>
-
-
-<section id="properties">
-
-<div class="section-title">
-
-<h2>Nos propriétés</h2>
-
-<p>
-Découvrez une sélection de biens immobiliers disponibles
-</p>
-
-</div>
-
-
-<div class="filters">
-
-<div class="filter active">Tous</div>
-<div class="filter">Villas</div>
-<div class="filter">Appartements</div>
-<div class="filter">Maisons</div>
-<div class="filter">Terrains</div>
-
-</div>
-
-
-<div class="properties">
-
-
-<div class="card">
-
-<div class="card-image">
-
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85">
-
-<div class="tag">À vendre</div>
-
-</div>
-
-<div class="card-body">
-
-<h3>Villa moderne</h3>
-
-<div class="location">📍 Nouakchott</div>
-
-<p>Villa élégante avec espaces généreux.</p>
-
-<div class="price">Prix sur demande</div>
-
-<div class="features">
-<span>4 Chambres</span>
-<span>3 SDB</span>
-<span>Villa</span>
-</div>
-
-<div class="card-buttons">
-<a class="details" href="#contact">Détails</a>
-<a class="whatsapp" href="https://wa.me/22233043366">WhatsApp</a>
-</div>
-
-</div>
-</div>
-
-
-<div class="card">
-
-<div class="card-image">
-
-<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85">
-
-<div class="tag">À vendre</div>
-
-</div>
-
-<div class="card-body">
-
-<h3>Maison familiale</h3>
-
-<div class="location">📍 Tevragh Zeina</div>
-
-<p>Maison moderne dans un quartier recherché.</p>
-
-<div class="price">Prix sur demande</div>
-
-<div class="features">
-<span>3 Chambres</span>
-<span>2 SDB</span>
-<span>Maison</span>
-</div>
-
-<div class="card-buttons">
-<a class="details" href="#contact">Détails</a>
-<a class="whatsapp" href="https://wa.me/22233043366">WhatsApp</a>
-</div>
-
-</div>
-</div>
-
-
-<div class="card">
-
-<div class="card-image">
-
-<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85">
-
-<div class="tag">À louer</div>
-
-</div>
-
-<div class="card-body">
-
-<h3>Appartement moderne</h3>
-
-<div class="location">📍 Nouakchott</div>
-
-<p>Appartement confortable et lumineux.</p>
-
-<div class="price">Prix sur demande</div>
-
-<div class="features">
-<span>2 Chambres</span>
-<span>1 SDB</span>
-<span>Appartement</span>
-</div>
-
-<div class="card-buttons">
-<a class="details" href="#contact">Détails</a>
-<a class="whatsapp" href="https://wa.me/22233043366">WhatsApp</a>
-</div>
-
-</div>
-</div>
-
-
-<div class="card">
-
-<div class="card-image">
-
-<img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=85">
-
-<div class="tag">À vendre</div>
-
-</div>
-
-<div class="card-body">
-
-<h3>Grande villa</h3>
-
-<div class="location">📍 Nouakchott</div>
-
-<p>Grande propriété adaptée aux familles.</p>
-
-<div class="price">Prix sur demande</div>
-
-<div class="features">
-<span>5 Chambres</span>
-<span>3 SDB</span>
-<span>Villa</span>
-</div>
-
-<div class="card-buttons">
-<a class="details" href="#contact">Détails</a>
-<a class="whatsapp" href="https://wa.me/22233043366">WhatsApp</a>
-</div>
-
-</div>
-</div>
-
-
-<div class="card">
-
-<div class="card-image">
-
-<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85">
-
-<div class="tag">À louer</div>
-
-</div>
-
-<div class="card-body">
-
-<h3>Appartement premium</h3>
-
-<div class="location">📍 Tevragh Zeina</div>
-
-<p>Appartement haut standing.</p>
-
-<div class="price">Prix sur demande</div>
-
-<div class="features">
-<span>3 Chambres</span>
-<span>2 SDB</span>
-<span>Appartement</span>
-</div>
-
-<div class="card-buttons">
-<a class="details" href="#contact">Détails</a>
-<a class="whatsapp" href="https://wa.me/22233043366">WhatsApp</a>
-</div>
-
-</div>
-</div>
-
-
-<div class="card">
-
-<div class="card-image">
-
-<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85">
-
-<div class="tag">Terrain</div>
-
-</div>
-
-<div class="card-body">
-
-<h3>Terrain à vendre</h3>
-
-<div class="location">📍 Nouakchott</div>
-
-<p>Terrain adapté à un projet immobilier.</p>
-
-<div class="price">Prix sur demande</div>
-
-<div class="features">
-<span>Grande surface</span>
-<span>Bon emplacement</span>
-<span>Terrain</span>
-</div>
-
-<div class="card-buttons">
-<a class="details" href="#contact">Détails</a>
-<a class="whatsapp" href="https://wa.me/22233043366">WhatsApp</a>
-</div>
-
-</div>
-</div>
-
-
-</div>
+<section>
+
+  <div class="section-title">
+    <h2>Nos catégories</h2>
+    <p>Découvrez les principales opportunités immobilières</p>
+  </div>
+
+  <div class="categories">
+
+    <a class="category" href="#proprietes">
+      <div class="category-icon">🏡</div>
+      <strong>Villas</strong>
+    </a>
+
+    <a class="category" href="#proprietes">
+      <div class="category-icon">🏢</div>
+      <strong>Appartements</strong>
+    </a>
+
+    <a class="category" href="#proprietes">
+      <div class="category-icon">🏠</div>
+      <strong>Maisons</strong>
+    </a>
+
+    <a class="category" href="#proprietes">
+      <div class="category-icon">🌍</div>
+      <strong>Terrains</strong>
+    </a>
+
+    <a class="category" href="#services">
+      <div class="category-icon">💼</div>
+      <strong>Investissement</strong>
+    </a>
+
+  </div>
 
 </section>
 
 
-<section class="dark" id="services">
+<section class="properties" id="proprietes">
 
-<div class="section-title">
+  <div class="section-title">
+    <h2>Propriétés sélectionnées</h2>
+    <p>Quelques exemples de biens présentés sur la plateforme</p>
+  </div>
 
-<h2>Nos services</h2>
-
-<p>
-Des solutions immobilières simples et professionnelles
-</p>
-
-</div>
+  <div class="property-grid">
 
 
-<div class="services">
+    <div class="card">
 
-<div class="service">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80">
+        <span class="tag">À vendre</span>
+      </div>
 
-<div class="icon">🏠</div>
+      <div class="card-body">
 
-<h3>Vente</h3>
+        <h3>Villa moderne</h3>
 
-<p>
-Nous vous accompagnons dans la vente de votre propriété.
-</p>
+        <div class="location">
+          📍 Nouakchott
+        </div>
 
-</div>
+        <div class="features">
+          <span>🛏 4 chambres</span>
+          <span>🚿 3 salles de bain</span>
+        </div>
 
+        <a href="#contact" class="card-btn">
+          Demander les détails
+        </a>
 
-<div class="service">
+      </div>
 
-<div class="icon">🔑</div>
-
-<h3>Location</h3>
-
-<p>
-Trouvez rapidement une maison ou un appartement adapté.
-</p>
-
-</div>
+    </div>
 
 
-<div class="service">
+    <div class="card">
 
-<div class="icon">📈</div>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80">
+        <span class="tag">À louer</span>
+      </div>
 
-<h3>Investissement</h3>
+      <div class="card-body">
 
-<p>
-Découvrez des opportunités immobilières en Mauritanie.
-</p>
+        <h3>Appartement moderne</h3>
 
-</div>
+        <div class="location">
+          📍 Tevragh Zeina
+        </div>
 
-</div>
+        <div class="features">
+          <span>🛏 3 chambres</span>
+          <span>🚿 2 salles de bain</span>
+        </div>
+
+        <a href="#contact" class="card-btn">
+          Demander les détails
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=80">
+        <span class="tag">À vendre</span>
+      </div>
+
+      <div class="card-body">
+
+        <h3>Résidence familiale</h3>
+
+        <div class="location">
+          📍 Nouakchott
+        </div>
+
+        <div class="features">
+          <span>🛏 5 chambres</span>
+          <span>🚗 Garage</span>
+        </div>
+
+        <a href="#contact" class="card-btn">
+          Demander les détails
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1000&q=80">
+        <span class="tag">Terrain</span>
+      </div>
+
+      <div class="card-body">
+
+        <h3>Terrain à bâtir</h3>
+
+        <div class="location">
+          📍 Nouakchott
+        </div>
+
+        <div class="features">
+          <span>📐 Surface sur demande</span>
+        </div>
+
+        <a href="#contact" class="card-btn">
+          Demander les détails
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80">
+        <span class="tag">À vendre</span>
+      </div>
+
+      <div class="card-body">
+
+        <h3>Villa haut standing</h3>
+
+        <div class="location">
+          📍 Tevragh Zeina
+        </div>
+
+        <div class="features">
+          <span>🛏 4 chambres</span>
+          <span>🏊 Piscine</span>
+        </div>
+
+        <a href="#contact" class="card-btn">
+          Demander les détails
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=80">
+        <span class="tag">À louer</span>
+      </div>
+
+      <div class="card-body">
+
+        <h3>Appartement familial</h3>
+
+        <div class="location">
+          📍 Nouakchott
+        </div>
+
+        <div class="features">
+          <span>🛏 3 chambres</span>
+          <span>🚿 2 salles de bain</span>
+        </div>
+
+        <a href="#contact" class="card-btn">
+          Demander les détails
+        </a>
+
+      </div>
+
+    </div>
+
+
+  </div>
 
 </section>
 
 
-<section id="about">
+<section class="services" id="services">
 
-<div class="about">
+  <div class="section-title">
 
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85">
+    <h2>Nos services</h2>
 
-<div>
+    <p style="color:#cbd5e1">
+      Un accompagnement adapté à votre projet immobilier
+    </p>
 
-<h2>À propos de DIAOUHA</h2>
+  </div>
 
-<p>
-DIAOUHA AGENCE IMMOBILIÈRE accompagne ses clients
-dans leurs projets immobiliers en Mauritanie.
-</p>
 
-<p>
-Notre objectif est de faciliter la recherche,
-la vente et la location de biens immobiliers
-avec une approche moderne et professionnelle.
-</p>
+  <div class="service-grid">
 
-<a href="#contact" class="btn gold">
-Parler à un conseiller
-</a>
+    <div class="service">
 
-</div>
+      <div class="service-icon">🏠</div>
 
-</div>
+      <h3>Achat & Vente</h3>
+
+      <p>
+        Accompagnement dans vos projets d’achat et de vente
+        de biens immobiliers.
+      </p>
+
+    </div>
+
+
+    <div class="service">
+
+      <div class="service-icon">🔑</div>
+
+      <h3>Location</h3>
+
+      <p>
+        Découvrez des logements adaptés à vos besoins
+        et à votre projet.
+      </p>
+
+    </div>
+
+
+    <div class="service">
+
+      <div class="service-icon">📈</div>
+
+      <h3>Investissement</h3>
+
+      <p>
+        Identifiez des opportunités immobilières
+        adaptées à votre stratégie.
+      </p>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<section id="contact">
+<section id="apropos">
 
-<div class="contact-box">
+  <div class="about">
 
-<h2>Parlons de votre projet immobilier</h2>
+    <div class="about-image">
 
-<p>
-Vous souhaitez acheter, vendre ou louer ?
-Contactez DIAOUHA AGENCE IMMOBILIÈRE.
-</p>
+      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85">
 
-<a class="whatsapp" href="https://wa.me/22233043366">
-💬 WhatsApp
-</a>
+    </div>
 
-<a class="call" href="tel:+22233043366">
-📞 Appeler
-</a>
 
-</div>
+    <div class="about-text">
+
+      <h2>DIAOUHA AGENCE IMMOBILIÈRE</h2>
+
+      <p>
+        Votre partenaire pour vos projets immobiliers
+        en Mauritanie.
+      </p>
+
+      <p>
+        Notre objectif est de faciliter la recherche,
+        l’achat, la vente et la location de biens immobiliers
+        grâce à un accompagnement simple et professionnel.
+      </p>
+
+      <div class="check">✓ Recherche de biens</div>
+      <div class="check">✓ Achat et vente</div>
+      <div class="check">✓ Location</div>
+      <div class="check">✓ Terrains et opportunités</div>
+      <div class="check">✓ Accompagnement personnalisé</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+  <div class="contact-box">
+
+    <h2>Parlons de votre projet</h2>
+
+    <p>
+      Vous souhaitez acheter, vendre ou louer un bien ?
+      Contactez DIAOUHA AGENCE IMMOBILIÈRE.
+    </p>
+
+
+    <div class="contact-info">
+
+      <div class="info">
+        <strong>📍 Localisation</strong>
+        Nouakchott, Mauritanie
+      </div>
+
+      <div class="info">
+        <strong>📱 WhatsApp</strong>
+        Contact de l’agence à renseigner
+      </div>
+
+      <div class="info">
+        <strong>📞 Téléphone</strong>
+        Numéro de l’agence à renseigner
+      </div>
+
+    </div>
+
+
+    <a href="#contact" class="btn btn-primary">
+      Prendre rendez-vous
+    </a>
+
+  </div>
 
 </section>
 
 
 <footer>
 
-<div class="footer-logo">
-DIAOUHA AGENCE IMMOBILIÈRE
-</div>
+  <strong>DIAOUHA AGENCE IMMOBILIÈRE</strong>
 
-<p>Votre partenaire immobilier en Mauritanie</p>
+  <br>
 
-<br>
+  Votre partenaire immobilier en Mauritanie.
 
-<p>© 2026 DIAOUHA — Tous droits réservés</p>
+  <br><br>
+
+  © 2026 DIAOUHA — Tous droits réservés.
 
 </footer>
 

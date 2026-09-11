@@ -4,250 +4,992 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DIAOUHA | وكالة عقارية في موريتانيا</title>
+<title>DIAOUHA | العقار في موريتانيا</title>
 
 <style>
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
 
 body{
-  font-family:Arial,Tahoma,sans-serif;
-  background:#f5f7fa;
-  color:#172033;
-  line-height:1.7;
+font-family:Arial,Tahoma,sans-serif;
+background:#f7f7f5;
+color:#172033;
+line-height:1.7;
 }
 
 header{
-  background:#101827;
-  color:white;
-  padding:18px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  z-index:100;
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(10,18,30,.97);
+padding:16px 6%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+box-shadow:0 3px 20px rgba(0,0,0,.15);
 }
 
 .logo{
-  font-size:25px;
-  font-weight:bold;
-  color:#d6ad60;
+font-size:27px;
+font-weight:900;
+color:#d7b36a;
+letter-spacing:1px;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-right:22px;
-  font-size:15px;
+color:#fff;
+text-decoration:none;
+margin-right:25px;
+font-size:14px;
 }
 
+nav a:hover{color:#d7b36a}
+
 .hero{
-  min-height:500px;
-  display:flex;
-  align-items:center;
-  background:
-  linear-gradient(rgba(10,20,35,.65),rgba(10,20,35,.65)),
-  url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80")
-  center/cover;
-  color:white;
-  padding:70px 7%;
+min-height:620px;
+display:flex;
+align-items:center;
+padding:80px 7%;
+color:#fff;
+background:
+linear-gradient(90deg,rgba(8,15,26,.95),rgba(8,15,26,.42)),
+url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85")
+center/cover;
 }
 
 .hero-content{
-  max-width:650px;
+max-width:720px;
+}
+
+.badge{
+display:inline-block;
+background:rgba(215,179,106,.15);
+border:1px solid #d7b36a;
+color:#e5c77f;
+padding:7px 15px;
+border-radius:30px;
+margin-bottom:20px;
 }
 
 .hero h1{
-  font-size:48px;
-  margin-bottom:15px;
+font-size:55px;
+line-height:1.2;
+margin-bottom:20px;
 }
 
+.hero h1 span{color:#d7b36a}
+
 .hero p{
-  font-size:19px;
-  margin-bottom:28px;
+font-size:19px;
+color:#e5e7eb;
+max-width:650px;
+margin-bottom:30px;
 }
 
 .btn{
-  display:inline-block;
-  background:#d6ad60;
-  color:#101827;
-  padding:13px 25px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-  margin:5px;
+display:inline-block;
+padding:13px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+transition:.25s;
 }
 
-.btn.dark{
-  background:white;
+.btn-gold{
+background:#d7b36a;
+color:#101827;
+}
+
+.btn-white{
+background:#fff;
+color:#101827;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.stats{
+background:#fff;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+max-width:900px;
+margin:-45px auto 0;
+position:relative;
+border-radius:15px;
+box-shadow:0 10px 35px rgba(0,0,0,.12);
+overflow:hidden;
+}
+
+.stat{
+text-align:center;
+padding:25px;
+border-left:1px solid #eee;
+}
+
+.stat:last-child{border:0}
+
+.stat strong{
+display:block;
+font-size:28px;
+color:#b58c42;
 }
 
 section{
-  padding:60px 6%;
+padding:80px 6%;
 }
 
-.title{
-  text-align:center;
-  margin-bottom:40px;
+.section-title{
+text-align:center;
+margin-bottom:45px;
 }
 
-.title h2{
-  font-size:32px;
-  margin-bottom:8px;
+.section-title h2{
+font-size:35px;
+margin-bottom:8px;
 }
 
-.title p{
-  color:#667085;
+.section-title p{
+color:#697386;
+}
+
+.filters{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:35px;
+}
+
+.filter{
+border:1px solid #ddd;
+background:#fff;
+padding:9px 18px;
+border-radius:25px;
+cursor:pointer;
+}
+
+.filter.active{
+background:#172033;
+color:#fff;
 }
 
 .properties{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
 }
 
 .card{
-  background:white;
-  border-radius:14px;
-  overflow:hidden;
-  box-shadow:0 5px 25px rgba(0,0,0,.08);
-  transition:.3s;
+background:#fff;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
+transform:translateY(-7px);
+box-shadow:0 12px 35px rgba(0,0,0,.14);
 }
 
-.card img{
-  width:100%;
-  height:220px;
-  object-fit:cover;
+.card-image{
+position:relative;
 }
 
-.card-content{
-  padding:20px;
+.card-image img{
+width:100%;
+height:230px;
+object-fit:cover;
+display:block;
 }
 
-.card h3{
-  font-size:20px;
-  margin-bottom:8px;
+.tag{
+position:absolute;
+top:14px;
+right:14px;
+background:#d7b36a;
+color:#111827;
+padding:5px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+}
+
+.card-body{
+padding:20px;
+}
+
+.card-body h3{
+font-size:20px;
+margin-bottom:5px;
 }
 
 .location{
-  color:#667085;
-  font-size:14px;
-  margin-bottom:10px;
+color:#727b8b;
+font-size:14px;
+margin-bottom:10px;
 }
 
 .price{
-  color:#b78938;
-  font-size:20px;
-  font-weight:bold;
-  margin:12px 0;
+font-size:21px;
+font-weight:bold;
+color:#b2873c;
+margin:12px 0;
 }
 
-.details{
-  display:flex;
-  justify-content:space-between;
-  border-top:1px solid #eee;
-  padding-top:12px;
-  font-size:14px;
+.features{
+display:flex;
+justify-content:space-between;
+font-size:13px;
+border-top:1px solid #eee;
+padding-top:13px;
+margin-top:12px;
+color:#596273;
 }
 
-.about{
-  background:#101827;
-  color:white;
+.card-buttons{
+display:flex;
+gap:8px;
+margin-top:17px;
 }
 
-.about-box{
-  max-width:900px;
-  margin:auto;
-  text-align:center;
+.card-buttons a{
+flex:1;
+text-align:center;
+padding:9px;
+border-radius:7px;
+text-decoration:none;
+font-size:13px;
+font-weight:bold;
 }
 
-.about-box h2{
-  font-size:32px;
-  margin-bottom:20px;
+.more{
+background:#172033;
+color:#fff;
 }
 
-.about-box p{
-  color:#d5d9e0;
-  font-size:17px;
+.wa{
+background:#25D366;
+color:#fff;
+}
+
+.dark-section{
+background:#101827;
+color:#fff;
+}
+
+.dark-section .section-title p{
+color:#b7bfcc;
 }
 
 .services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
 }
 
 .service{
-  background:white;
-  padding:30px;
-  border-radius:14px;
-  text-align:center;
-  box-shadow:0 5px 20px rgba(0,0,0,.06);
+background:#172033;
+border:1px solid rgba(255,255,255,.08);
+padding:32px 25px;
+border-radius:15px;
+text-align:center;
 }
 
 .service-icon{
-  font-size:45px;
-  margin-bottom:15px;
+font-size:42px;
+margin-bottom:15px;
 }
 
-.contact{
-  text-align:center;
+.service h3{
+margin-bottom:10px;
+}
+
+.service p{
+color:#b9c0cb;
+font-size:14px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about-img{
+width:100%;
+height:420px;
+object-fit:cover;
+border-radius:18px;
+}
+
+.about-text h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.about-text p{
+color:#667085;
+margin-bottom:20px;
 }
 
 .contact-box{
-  background:white;
-  max-width:700px;
-  margin:auto;
-  padding:35px;
-  border-radius:15px;
-  box-shadow:0 5px 25px rgba(0,0,0,.08);
+max-width:850px;
+margin:auto;
+background:#fff;
+padding:45px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 8px 35px rgba(0,0,0,.08);
+}
+
+.contact-box h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.contact-box p{
+color:#667085;
+margin-bottom:25px;
+}
+
+.contact-buttons a{
+display:inline-block;
+padding:13px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+}
+
+.call{
+background:#172033;
+color:#fff;
 }
 
 .whatsapp{
-  background:#25D366;
-  color:white;
+background:#25D366;
+color:#fff;
 }
 
 footer{
-  background:#0b111d;
-  color:#aaa;
-  text-align:center;
-  padding:25px;
-  font-size:14px;
+background:#090f19;
+color:#9ba3b0;
+padding:35px 6%;
+text-align:center;
 }
 
-@media(max-width:800px){
+.footer-logo{
+color:#d7b36a;
+font-size:23px;
+font-weight:bold;
+margin-bottom:10px;
+}
 
-  header{
-    flex-direction:column;
-    gap:12px;
-  }
+@media(max-width:850px){
 
-  nav a{
-    margin:0 7px;
-    font-size:13px;
-  }
+nav{display:none}
 
-  .hero{
-    min-height:550px;
-    text-align:center;
-    justify-content:center;
-  }
+.hero{
+min-height:560px;
+text-align:center;
+justify-content:center;
+padding:60px 5%;
+}
 
-  .hero h1{
-    font-size:35px;
-  }
+.hero h1{
+font-size:39px;
+}
 
-  .hero p{
-    font-size:16px;
-  }
+.hero p{
+font-size:16px;
+}
 
-  .properties,
+.stats{
+margin:-30px 5% 0;
+grid-template-columns:1fr;
+}
+
+.stat{
+border-left:0;
+border-bottom:1px solid #eee;
+}
+
+.properties,
+.services,
+.about{
+grid-template-columns:1fr;
+}
+
+.about-img{
+height:300px;
+}
+
+section{
+padding:60px 5%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">DIAOUHA</div>
+
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#properties">العقارات</a>
+<a href="#services">خدماتنا</a>
+<a href="#about">من نحن</a>
+<a href="#contact">تواصل معنا</a>
+</nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">وكالة عقارية في موريتانيا</div>
+
+<h1>
+ابحث عن <span>عقارك المثالي</span>
+</h1>
+
+<p>
+من الفيلات الفاخرة إلى الشقق والمنازل والأراضي،
+نساعدك على العثور على العقار المناسب في المكان المناسب.
+</p>
+
+<a href="#properties" class="btn btn-gold">
+تصفح العقارات
+</a>
+
+<a href="#contact" class="btn btn-white">
+تواصل معنا
+</a>
+
+</div>
+
+</section>
+
+
+<div class="stats">
+
+<div class="stat">
+<strong>+50</strong>
+عقار متاح
+</div>
+
+<div class="stat">
+<strong>+20</strong>
+عميل
+</div>
+
+<div class="stat">
+<strong>24/7</strong>
+خدمة العملاء
+</div>
+
+</div>
+
+
+<section id="properties">
+
+<div class="section-title">
+
+<h2>عقارات مختارة</h2>
+
+<p>
+اكتشف مجموعة من العقارات المناسبة للسكن والاستثمار
+</p>
+
+</div>
+
+
+<div class="filters">
+
+<div class="filter active">الكل</div>
+<div class="filter">فيلات</div>
+<div class="filter">شقق</div>
+<div class="filter">منازل</div>
+<div class="filter">أراضي</div>
+
+</div>
+
+
+<div class="properties">
+
+
+<!-- 1 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">للبيع</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>فيلا فاخرة</h3>
+
+<div class="location">📍 نواكشوط</div>
+
+<p>فيلا عصرية بتصميم راقٍ ومساحات واسعة.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>🛏 4 غرف</span>
+<span>🚿 3 حمامات</span>
+<span>🏠 فيلا</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- 2 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">للبيع</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>منزل عصري</h3>
+
+<div class="location">📍 تفرغ زينة</div>
+
+<p>منزل حديث مناسب للعائلات في موقع مميز.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>🛏 3 غرف</span>
+<span>🚿 2 حمام</span>
+<span>🏠 منزل</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- 3 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">للإيجار</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>شقة حديثة</h3>
+
+<div class="location">📍 نواكشوط</div>
+
+<p>شقة حديثة مناسبة للسكن والاستثمار.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>🛏 غرفتان</span>
+<span>🚿 حمام</span>
+<span>🏢 شقة</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- 4 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">للبيع</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>فيلا عائلية</h3>
+
+<div class="location">📍 نواكشوط</div>
+
+<p>تصميم واسع مع مساحة خارجية جميلة.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>🛏 5 غرف</span>
+<span>🚿 3 حمامات</span>
+<span>🏠 فيلا</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- 5 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">للإيجار</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>شقة راقية</h3>
+
+<div class="location">📍 تفرغ زينة</div>
+
+<p>شقة بتصميم أنيق وموقع قريب من الخدمات.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>🛏 3 غرف</span>
+<span>🚿 2 حمام</span>
+<span>🏢 شقة</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- 6 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">للبيع</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>منزل حديث</h3>
+
+<div class="location">📍 نواكشوط</div>
+
+<p>منزل عملي ومناسب لعائلة صغيرة.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>🛏 3 غرف</span>
+<span>🚿 2 حمام</span>
+<span>🏠 منزل</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- 7 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">أرض</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>قطعة أرض</h3>
+
+<div class="location">📍 نواكشوط</div>
+
+<p>قطعة أرض مناسبة للبناء والاستثمار.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>📐 مساحة كبيرة</span>
+<span>📍 موقع مميز</span>
+<span>🌱 أرض</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- 8 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">للبيع</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>منزل فاخر</h3>
+
+<div class="location">📍 نواكشوط</div>
+
+<p>منزل راقٍ بتشطيبات عصرية.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>🛏 4 غرف</span>
+<span>🚿 3 حمامات</span>
+<span>🏠 منزل</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+<!-- 9 -->
+
+<div class="card">
+
+<div class="card-image">
+
+<img src="https://images.unsplash.com/photo-1600047509782-20d39509f26d?auto=format&fit=crop&w=900&q=85">
+
+<div class="tag">للإيجار</div>
+
+</div>
+
+<div class="card-body">
+
+<h3>فيلا للإيجار</h3>
+
+<div class="location">📍 تفرغ زينة</div>
+
+<p>فيلا واسعة مناسبة للعائلات والشركات.</p>
+
+<div class="price">حسب الطلب</div>
+
+<div class="features">
+<span>🛏 5 غرف</span>
+<span>🚿 4 حمامات</span>
+<span>🏠 فيلا</span>
+</div>
+
+<div class="card-buttons">
+<a class="more" href="#contact">التفاصيل</a>
+<a class="wa" href="https://wa.me/22233043366">واتساب</a>
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+</section>
+
+
+<section class="dark-section" id="services">
+
+<div class="section-title">
+
+<h2>خدماتنا</h2>
+
+<p>حلول عقارية مصممة لتسهيل عملية البيع والشراء والإيجار</p>
+
+</div>
+
+
+<div class="services">
+
+<div class="service">
+
+<div class="service-icon">🏠</div>
+
+<h3>بيع العقارات</h3>
+
+<p>
+نعرض عقارك بطريقة احترافية للوصول إلى العملاء المهتمين.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">🔑</div>
+
+<h3>شراء العقارات</h3>
+
+<p>
+نساعدك في العثور على العقار المناسب حسب ميزانيتك واحتياجاتك.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">📈</div>
+
+<h3>الاستثمار العقاري</h3>
+
+<p>
+نساعد المستثمرين في اكتشاف الفرص العقارية المناسبة.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<div class="about">
+
+<img
+class="about-img"
+src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85">
+
+<div class="about-text">
+
+<h2>شريكك العقاري الموثوق</h2>
+
+<p>
+في DIAOUHA نؤمن بأن العثور على العقار المناسب يجب أن يكون سهلاً وواضحاً.
+لذلك نقدم تجربة رقمية بسيطة تساعد العملاء على اكتشاف العقارات والتواصل مباشرة.
+</p>
+
+<p>
+هدفنا هو ربط أصحاب العقارات بالعملاء بطريقة احترافية وسريعة.
+</p>
+
+<a href="#contact" class="btn btn-gold">
+تحدث معنا الآن
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<div class="contact-box">
+
+<h2>هل تبحث عن عقار؟</h2>
+
+<p>
+تواصل معنا الآن لمعرفة العقارات المتوفرة والأسعار والمواقع.
+</p>
+
+<div class="contact-buttons">
+
+<a class="whatsapp" href="https://wa.me/22233043366">
+💬 واتساب
+</a>
+
+<a class="call" href="tel:+22233043366">
+📞 اتصال مباشر
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-logo">DIAOUHA</div>
+
+<p>وكالة عقارية في موريتانيا</p>
+
+<p>© 2026 جميع الحقوق محفوظة</p>
+
+</footer>
+
+</body>
+</html>    

@@ -3,116 +3,175 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DIAOUHA | وكالة عقارية</title>
+<title>DIAOUHA | وكالة عقارية في موريتانيا</title>
 
 <style>
 *{box-sizing:border-box}
 body{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f5f6f8;
-color:#222;
+font-family:Arial,Tahoma,sans-serif;
+background:#f5f7f8;
+color:#172033;
 }
 header{
-background:#111827;
+background:#101827;
 color:white;
-padding:18px;
+padding:22px 18px;
 text-align:center;
 }
-header h1{margin:0;font-size:28px}
-header p{margin:8px 0 0;color:#d1d5db}
-
+.logo{
+font-size:34px;
+font-weight:bold;
+letter-spacing:2px;
+}
+.subtitle{
+margin-top:7px;
+font-size:17px;
+color:#d7dde5;
+}
 nav{
 background:white;
-padding:12px;
-text-align:center;
+display:flex;
+justify-content:center;
+gap:28px;
+padding:17px 10px;
 position:sticky;
 top:0;
-z-index:5;
+z-index:10;
 box-shadow:0 2px 8px #0001;
 }
 nav a{
-margin:0 8px;
+color:#172033;
 text-decoration:none;
-color:#111827;
 font-weight:bold;
 }
-
 .hero{
-padding:55px 20px;
+min-height:430px;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-background:linear-gradient(135deg,#1f2937,#374151);
+padding:50px 20px;
+background:
+linear-gradient(#101827cc,#101827cc),
+url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80")
+center/cover;
 color:white;
 }
-.hero h2{font-size:34px;margin:0 0 15px}
-.hero p{font-size:18px;color:#e5e7eb}
-
+.hero h1{
+font-size:42px;
+margin:0 0 18px;
+}
+.hero p{
+font-size:20px;
+line-height:1.8;
+max-width:650px;
+margin:auto;
+}
 .btn{
 display:inline-block;
-padding:13px 22px;
+margin-top:25px;
+padding:15px 30px;
 background:#16a34a;
 color:white;
 text-decoration:none;
 border-radius:10px;
 font-weight:bold;
-margin-top:10px;
+font-size:18px;
 }
-
 section{
-padding:35px 18px;
+padding:55px 18px;
 max-width:1100px;
 margin:auto;
 }
-section h2{text-align:center;margin-bottom:25px}
-
-.search{
+.title{
+text-align:center;
+font-size:30px;
+margin-bottom:35px;
+}
+.filters{
+display:flex;
+gap:10px;
+justify-content:center;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+.filter{
 background:white;
-padding:18px;
-border-radius:15px;
-box-shadow:0 3px 12px #0001;
-margin-bottom:25px;
-}
-.search input,.search select{
-width:100%;
-padding:13px;
-margin:6px 0;
 border:1px solid #ddd;
-border-radius:8px;
-font-size:16px;
+padding:12px 20px;
+border-radius:25px;
 }
-
-.grid{
+.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:22px;
 }
-
 .card{
 background:white;
 border-radius:15px;
 overflow:hidden;
-box-shadow:0 4px 15px #0001;
+box-shadow:0 5px 18px #00000012;
 }
 .card img{
 width:100%;
-height:190px;
+height:210px;
 object-fit:cover;
 }
-.card-content{padding:17px}
-.card h3{margin-top:0}
-.price{
-font-size:20px;
-font-weight:bold;
-color:#16a34a;
+.card-content{
+padding:20px;
 }
-.location{color:#666}
-
-footer{
-background:#111827;
+.card h3{
+margin-top:0;
+font-size:21px;
+}
+.price{
+color:#16a34a;
+font-size:21px;
+font-weight:bold;
+}
+.location{
+color:#667085;
+margin:10px 0;
+}
+.card .btn{
+font-size:15px;
+padding:11px 20px;
+margin-top:10px;
+}
+.about{
+background:white;
+text-align:center;
+}
+.about p{
+max-width:750px;
+margin:auto;
+line-height:2;
+font-size:18px;
+color:#555;
+}
+.contact{
+background:#101827;
 color:white;
 text-align:center;
+max-width:none;
+}
+.contact p{
+font-size:18px;
+}
+footer{
+background:#0b111c;
+color:#aaa;
+text-align:center;
 padding:25px;
-margin-top:30px;
+}
+.badge{
+display:inline-block;
+background:#e8f7ed;
+color:#16803c;
+padding:6px 12px;
+border-radius:20px;
+font-size:13px;
 }
 </style>
 </head>
@@ -120,23 +179,99 @@ margin-top:30px;
 <body>
 
 <header>
-<h1>DIAOUHA</h1>
-<p>وكالة عقارية في موريتانيا</p>
+<div class="logo">DIAOUHA</div>
+<div class="subtitle">وكالة عقارية في موريتانيا</div>
 </header>
 
 <nav>
 <a href="#home">الرئيسية</a>
 <a href="#properties">العقارات</a>
 <a href="#about">من نحن</a>
-<a href="#contact">تواصل</a>
+<a href="#contact">تواصل معنا</a>
 </nav>
 
-<div class="hero" id="home">
-<h2>ابحث عن عقارك بسهولة</h2>
-<p>منازل، شقق، أراضٍ، مكاتب ومحلات في موريتانيا</p>
+<section class="hero" id="home">
+<div>
+<h1>ابحث عن عقارك بسهولة</h1>
+<p>
+منازل، شقق، أراضٍ ومحلات في موريتانيا.
+نساعدك على الوصول إلى العقار المناسب بطريقة سهلة وواضحة.
+</p>
 <a class="btn" href="#properties">تصفح العقارات</a>
 </div>
+</section>
 
 <section id="properties">
+<h2 class="title">العقارات المتاحة</h2>
 
-<h2>العقارات المتاحة</h2>
+<div class="filters">
+<div class="filter">🏠 منازل</div>
+<div class="filter">🏢 شقق</div>
+<div class="filter">🌳 أراضٍ</div>
+<div class="filter">🏪 محلات</div>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<span class="badge">للبيع</span>
+<h3>منزل عصري</h3>
+<div class="location">📍 نواكشوط</div>
+<p>منزل بتصميم عصري ومساحة مناسبة للعائلة.</p>
+<div class="price">السعر: حسب الطلب</div>
+<a class="btn" href="#contact">استفسر الآن</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<span class="badge">للإيجار</span>
+<h3>شقة راقية</h3>
+<div class="location">📍 نواكشوط</div>
+<p>شقة مناسبة للسكن في موقع مميز.</p>
+<div class="price">السعر: حسب الطلب</div>
+<a class="btn" href="#contact">استفسر الآن</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<span class="badge">للبيع</span>
+<h3>قطعة أرض</h3>
+<div class="location">📍 موريتانيا</div>
+<p>قطعة أرض مناسبة للاستثمار أو البناء.</p>
+<div class="price">السعر: حسب الطلب</div>
+<a class="btn" href="#contact">استفسر الآن</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2 class="title">من نحن</h2>
+<p>
+DIAOUHA وكالة عقارية تهدف إلى تسهيل الوصول إلى العقارات
+والفرص العقارية في موريتانيا، مع تقديم تجربة بسيطة
+للبحث والتواصل مع المعلن.
+</p>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="title">تواصل معنا</h2>
+<p>هل تبحث عن عقار أو تريد عرض عقارك؟</p>
+<a class="btn" href="https://wa.me/22200000000">
+تواصل عبر WhatsApp
+</a>
+</section>
+
+<footer>
+© 2026 DIAOUHA — وكالة عقارية في موريتانيا
+</footer>
+
+</body>
+</html>
